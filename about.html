@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Cenoir Studios — a young independent game development studio focused on atmospheric, narrative-driven games." />
+  <title>About — Cenoir Studios</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./assets/Logo.png" type="image/png" />
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo-link">
+      <img src="./assets/Logo.png" alt="Cenoir Studios" class="logo" />
+      <span class="brand">Cenoir Studios</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="news.html">News</a>
+      <a href="careers.html">Careers</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="page">
+    <section class="about-hero">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">About Us</span>
+          <h1 class="section-title" style="font-size: clamp(2.4rem, 5vw, 3.5rem);">We build worlds<br />worth getting lost in.</h1>
+          <p class="section-desc" style="max-width: 620px;">
+            Cenoir Studios is a small and ambitious independent game development studio.
+            We create atmospheric gameplay experiences with strong visual identity, memorable
+            art direction, and stories that linger long after the screen goes dark.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="about-grid">
+          <div class="card reveal">
+            <h3>Our Vision</h3>
+            <p>
+              We believe games are the most powerful storytelling medium of our generation.
+              Not because of spectacle, but because of immersion — the feeling of being
+              inside a world and shaping it with your choices.
+            </p>
+            <p>
+              Every project at Cenoir starts with a question: what kind of experience do we
+              want the player to carry with them? The mechanics, the visuals, the audio — they
+              all exist in service of that experience.
+            </p>
+          </div>
+          <div class="card reveal reveal-delay-1">
+            <h3>How We Work</h3>
+            <p>
+              Our codebase follows a feature-oriented hybrid architecture with MVP + State Machine
+              patterns, powered by Zenject for dependency injection. Every feature — movement,
+              combat, HUD — lives in its own self-contained module.
+            </p>
+            <p>
+              This isn't just engineering for engineering's sake. It means faster iteration,
+              cleaner collaboration, and the ability to experiment with new mechanics without
+              breaking what already works.
+            </p>
+          </div>
+        </div>
+
+        <div class="value-strip">
+          <div class="value-item reveal">
+            <span class="value-icon">◆</span>
+            <h4>Atmosphere First</h4>
+            <p>Mood and tone drive every design decision, from level layout to color grading.</p>
+          </div>
+          <div class="value-item reveal reveal-delay-1">
+            <span class="value-icon">◈</span>
+            <h4>Clean Architecture</h4>
+            <p>Feature-oriented structure with strict namespace conventions and assembly boundaries.</p>
+          </div>
+          <div class="value-item reveal reveal-delay-2">
+            <span class="value-icon">◇</span>
+            <h4>Story That Matters</h4>
+            <p>Narrative is not a wrapper — it's the reason the game exists.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background: linear-gradient(to bottom, transparent, rgba(212,137,42,0.03), transparent);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Our Debut</span>
+          <h2 class="section-title">NoSaints: New Dawn</h2>
+          <p class="section-desc">
+            Our first project combines intensity, style, and mystery into a unique game
+            universe — a narrative-driven FPS with a storytelling perspective unlike anything
+            you've played before.
+          </p>
+        </div>
+
+        <div class="reveal reveal-delay-1" style="border-radius: 18px; overflow: hidden; aspect-ratio: 21/9; margin-top: 2rem;">
+          <img src="./assets/NoSaints/ConceptArt/Concept_2.png" alt="NoSaints concept art" style="width:100%; height:100%; object-fit: cover;" />
+        </div>
+
+        <div class="reveal reveal-delay-2" style="text-align: center; margin-top: 2rem;">
+          <a href="projects.html" class="btn btn--primary">See the Project →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="./assets/Logo.png" alt="Cenoir" />
+        <span>Cenoir Studios</span>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="news.html">News</a>
+        <a href="careers.html">Careers</a>
+        <a href="mailto:contact@cenoirstudios.com">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 Cenoir Studios. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

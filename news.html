@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Latest news and development updates from Cenoir Studios." />
+  <title>News — Cenoir Studios</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./assets/Logo.png" type="image/png" />
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo-link">
+      <img src="./assets/Logo.png" alt="Cenoir Studios" class="logo" />
+      <span class="brand">Cenoir Studios</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="news.html" class="active">News</a>
+      <a href="careers.html">Careers</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="page">
+    <section class="news-hero">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">News & Updates</span>
+          <h1 class="section-title" style="font-size: clamp(2.4rem, 5vw, 3.5rem);">From the studio.</h1>
+          <p class="section-desc">
+            Development logs, announcements, and behind-the-scenes notes from the Cenoir team.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="news-feed">
+
+          <div class="news-item reveal">
+            <div class="news-date-block">
+              <span class="news-day">24</span>
+              <span class="news-month">May 2026</span>
+            </div>
+            <div class="news-body">
+              <h3>Website Redesign Live</h3>
+              <p>
+                The Cenoir Studios website has been rebuilt with separate sections for projects,
+                news, and careers. The projects page now features a concept art gallery showcasing
+                environment art from NoSaints: New Dawn.
+              </p>
+            </div>
+            <span class="news-tag">Studio</span>
+          </div>
+
+          <div class="news-item reveal reveal-delay-1">
+            <div class="news-date-block">
+              <span class="news-day">15</span>
+              <span class="news-month">May 2026</span>
+            </div>
+            <div class="news-body">
+              <h3>NoSaints: Combat System Progress</h3>
+              <p>
+                The combat feature module is taking shape — states for melee, ranged, and
+                ability-based actions are now running through the priority-based state machine.
+                KINEMATION procedural animation is driving weapon sway and recoil.
+              </p>
+            </div>
+            <span class="news-tag">Development</span>
+          </div>
+
+          <div class="news-item reveal reveal-delay-2">
+            <div class="news-date-block">
+              <span class="news-day">02</span>
+              <span class="news-month">Apr 2026</span>
+            </div>
+            <div class="news-body">
+              <h3>Movement System Overhaul</h3>
+              <p>
+                The character movement feature has been refactored into a clean MVP + State Machine
+                architecture. Idle, Move, Sprint, Jump, Crouch, and Slide states are now
+                ScriptableObject-based and fully priority-driven.
+              </p>
+            </div>
+            <span class="news-tag">Development</span>
+          </div>
+
+          <div class="news-item reveal reveal-delay-3">
+            <div class="news-date-block">
+              <span class="news-day">10</span>
+              <span class="news-month">Feb 2026</span>
+            </div>
+            <div class="news-body">
+              <h3>Environment Concept Art Reveal</h3>
+              <p>
+                Seven new concept art pieces for NoSaints: New Dawn are now public — featuring
+                the game's signature amber-lit cityscapes, industrial architecture, and the
+                interior of the Blue Whale bar. Art by Andrey Ivasenko.
+              </p>
+            </div>
+            <span class="news-tag">Art</span>
+          </div>
+
+          <div class="news-item reveal reveal-delay-4">
+            <div class="news-date-block">
+              <span class="news-day">01</span>
+              <span class="news-month">Jan 2026</span>
+            </div>
+            <div class="news-body">
+              <h3>Cenoir Studios Founded</h3>
+              <p>
+                The official founding of Cenoir Studios. A small team, a big vision, and the
+                beginning of NoSaints — our debut project.
+              </p>
+            </div>
+            <span class="news-tag">Studio</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="./assets/Logo.png" alt="Cenoir" />
+        <span>Cenoir Studios</span>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="news.html">News</a>
+        <a href="careers.html">Careers</a>
+        <a href="mailto:contact@cenoirstudios.com">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 Cenoir Studios. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
