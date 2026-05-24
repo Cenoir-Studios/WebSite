@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="NoSaints: New Dawn — a narrative-driven FPS by Cenoir Studios. Explore concept art, gameplay details, and download the latest build." />
+  <meta name="description" content="NoSaints: New Dawn — a narrative-driven FPS by Cenoir Studios. Explore concept art and download builds." />
   <title>Projects — Cenoir Studios</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="./assets/Logo.png" type="image/png" />
@@ -40,7 +40,6 @@
     <section class="section" style="padding-top: 0;">
       <div class="container container--wide">
         <div class="project-showcase reveal">
-
           <div class="project-top">
             <div class="project-info-panel">
               <h2>NoSaints</h2>
@@ -63,9 +62,7 @@
                 <span>Indie</span>
               </div>
               <div class="project-actions">
-                <a class="btn btn--primary" href="https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/main.zip" target="_blank">
-                  ▶ Download Build
-                </a>
+                <button class="btn btn--primary" data-download-trigger>▶ Download Build</button>
                 <a class="btn btn--ghost btn--small" href="news.html">Dev Updates →</a>
               </div>
             </div>
@@ -99,27 +96,13 @@
           <div class="gallery-section">
             <p class="gallery-label">Concept Art Gallery</p>
             <div class="gallery-grid">
-              <div class="gallery-thumb active" data-lightbox="./assets/NoSaints/ConceptArt/Concept_5.png">
-                <img src="./assets/NoSaints/ConceptArt/Concept_5.png" alt="Thumb 1" />
-              </div>
-              <div class="gallery-thumb" data-lightbox="./assets/NoSaints/ConceptArt/Concept_1.png">
-                <img src="./assets/NoSaints/ConceptArt/Concept_1.png" alt="Thumb 2" />
-              </div>
-              <div class="gallery-thumb" data-lightbox="./assets/NoSaints/ConceptArt/Concept_2.png">
-                <img src="./assets/NoSaints/ConceptArt/Concept_2.png" alt="Thumb 3" />
-              </div>
-              <div class="gallery-thumb" data-lightbox="./assets/NoSaints/ConceptArt/Concept_3.png">
-                <img src="./assets/NoSaints/ConceptArt/Concept_3.png" alt="Thumb 4" />
-              </div>
-              <div class="gallery-thumb" data-lightbox="./assets/NoSaints/ConceptArt/Concept_4.png">
-                <img src="./assets/NoSaints/ConceptArt/Concept_4.png" alt="Thumb 5" />
-              </div>
-              <div class="gallery-thumb" data-lightbox="./assets/NoSaints/ConceptArt/Concept_7.png">
-                <img src="./assets/NoSaints/ConceptArt/Concept_7.png" alt="Thumb 6" />
-              </div>
-              <div class="gallery-thumb" data-lightbox="./assets/NoSaints/ConceptArt/Concept_6.png">
-                <img src="./assets/NoSaints/ConceptArt/Concept_6.png" alt="Thumb 7" />
-              </div>
+              <div class="gallery-thumb active" data-lightbox="./assets/NoSaints/ConceptArt/Concept_5.png"><img src="./assets/NoSaints/ConceptArt/Concept_5.png" alt="Thumb 1" /></div>
+              <div class="gallery-thumb" data-lightbox="./assets/NoSaints/ConceptArt/Concept_1.png"><img src="./assets/NoSaints/ConceptArt/Concept_1.png" alt="Thumb 2" /></div>
+              <div class="gallery-thumb" data-lightbox="./assets/NoSaints/ConceptArt/Concept_2.png"><img src="./assets/NoSaints/ConceptArt/Concept_2.png" alt="Thumb 3" /></div>
+              <div class="gallery-thumb" data-lightbox="./assets/NoSaints/ConceptArt/Concept_3.png"><img src="./assets/NoSaints/ConceptArt/Concept_3.png" alt="Thumb 4" /></div>
+              <div class="gallery-thumb" data-lightbox="./assets/NoSaints/ConceptArt/Concept_4.png"><img src="./assets/NoSaints/ConceptArt/Concept_4.png" alt="Thumb 5" /></div>
+              <div class="gallery-thumb" data-lightbox="./assets/NoSaints/ConceptArt/Concept_7.png"><img src="./assets/NoSaints/ConceptArt/Concept_7.png" alt="Thumb 6" /></div>
+              <div class="gallery-thumb" data-lightbox="./assets/NoSaints/ConceptArt/Concept_6.png"><img src="./assets/NoSaints/ConceptArt/Concept_6.png" alt="Thumb 7" /></div>
             </div>
           </div>
         </div>
@@ -127,6 +110,33 @@
     </section>
   </main>
 
+  <!-- ═══ DOWNLOAD MODAL ═══ -->
+  <div id="download-modal" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <h3>Download NoSaints</h3>
+      <p>Choose your platform to download the latest build.</p>
+      <div class="platform-options">
+        <a class="platform-btn" href="https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/windows.zip" target="_blank">
+          <span class="platform-icon">🪟</span>
+          <span class="platform-name">Windows</span>
+          <span class="platform-arch">x64 · .zip</span>
+        </a>
+        <a class="platform-btn" href="https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/mac.zip" target="_blank">
+          <span class="platform-icon">🍎</span>
+          <span class="platform-name">macOS</span>
+          <span class="platform-arch">Universal · .zip</span>
+        </a>
+        <a class="platform-btn" href="https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/linux.zip" target="_blank">
+          <span class="platform-icon">🐧</span>
+          <span class="platform-name">Linux</span>
+          <span class="platform-arch">x86_64 · .zip</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ LIGHTBOX ═══ -->
   <div id="lightbox" class="lightbox">
     <button class="lightbox-close" aria-label="Close">✕</button>
     <img src="" alt="Enlarged concept art" />
@@ -138,12 +148,25 @@
         <img src="./assets/Logo.png" alt="Cenoir" />
         <span>Cenoir Studios</span>
       </div>
-      <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="news.html">News</a>
-        <a href="careers.html">Careers</a>
-        <a href="mailto:contact@cenoirstudios.com">Contact</a>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>Studio</h4>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="news.html">News</a>
+          <a href="careers.html">Careers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:contact@cenoirstudios.com">contact@cenoirstudios.com</a>
+          <a href="mailto:careers@cenoirstudios.com">careers@cenoirstudios.com</a>
+          <a href="mailto:support@cenoirstudios.com">support@cenoirstudios.com</a>
+        </div>
+        <div class="footer-col">
+          <h4>Other</h4>
+          <a href="mailto:social@cenoirstudios.com">social@cenoirstudios.com</a>
+          <a href="mailto:legal@cenoirstudios.com">legal@cenoirstudios.com</a>
+        </div>
       </div>
       <p class="footer-copy">© 2026 Cenoir Studios. All rights reserved.</p>
     </div>
