@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.team-avatar[data-photo]').forEach(avatar => {
         const name = avatar.dataset.photo;
-        const exts = ['png', 'jpg', 'jpeg'];
+        const exts = ['png', 'jpg', 'jpeg', 'PNG', 'JPG', 'JPEG'];
         let i = 0;
 
         function attempt() {
@@ -139,8 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const dot = src.lastIndexOf('.');
             if (dot === -1) return;
             const base = src.substring(0, dot);
-            const currentExt = src.substring(dot + 1).toLowerCase();
-            const alts = ['png', 'jpg', 'jpeg'].filter(e => e !== currentExt);
+            const currentExt = src.substring(dot + 1);
+            const alts = ['png', 'jpg', 'jpeg', 'PNG', 'JPG', 'JPEG'].filter(e => e !== currentExt);
             let j = 0;
             function next() {
                 if (j >= alts.length) return;
