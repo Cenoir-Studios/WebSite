@@ -105,4 +105,59 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.key === 'Escape') downloadModal.classList.remove('open');
         });
     }
+
+    document.querySelectorAll('.team-avatar[data-photo]').forEach(avatar => {
+        const name = avatar.dataset.photo;
+        const exts = ['png', 'jpg', 'jpeg'];
+        let i = 0;
+
+        function attempt() {
+            if (i >= exts.length) return;
+            const url = './assets/Team/' + name + '.' + exts[i];
+            i++;
+            const img = new Image();
+            img.onload = function () {
+                if (img.naturalWidth > 0) {
+                    img.style.cssText = 'width:100%;height:100%;object-fit:cover;display:block;';
+                    const p = avatar.querySelector('.team-avatar-placeholder');
+                    if (p) p.style.display = 'none';
+                    avatar.insertBefore(img, avatar.firstChild);
+                }
+            };
+            img.onerror = attempt;
+            img.src = url;
+        }
+
+        attempt();
+    });
+
+    document.querySelectorAll('img[src]').forEach(img => {
+        if (img.closest('.team-avatar')) return;
+
+        function tryAlts() {
+            const src = img.getAttribute('src');
+            const dot = src.lastIndexOf('.');
+            if (dot === -1) return;
+            const base = src.substring(0, dot);
+            const currentExt = src.substring(dot + 1).toLowerCase();
+            const alts = ['png', 'jpg', 'jpeg'].filter(e => e !== currentExt);
+            let j = 0;
+            function next() {
+                if (j >= alts.length) return;
+                img.onerror = next;
+                img.setAttribute('src', base + '.' + alts[j]);
+                j++;
+            }
+            next();
+        }
+
+        if (img.complete && img.naturalWidth === 0) {
+            tryAlts();
+        } else {
+            img.addEventListener('error', function handler() {
+                img.removeEventListener('error', handler);
+                tryAlts();
+            });
+        }
+    });
 });
