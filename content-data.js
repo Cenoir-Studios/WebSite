@@ -1,3 +1,4 @@
+/* Auto-generated from assets/content/*.json — fallback for when fetch fails */
 const CONTENT = {
   shared: {
   "brand": "Cenoir Studios",
