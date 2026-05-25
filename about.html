@@ -1,362 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="About Cenoir Studios — our team, our journey from a diploma project to an indie studio, and why we make the games we make." />
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Cenoir Studios — our team, our journey, and why we make the games we make.">
   <title>About — Cenoir Studios</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="./assets/Logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css"><link rel="icon" href="./assets/Logo.png" type="image/png">
 </head>
 <body>
-
   <header class="navbar">
-    <a href="index.html" class="logo-link">
-      <img src="./assets/Logo.png" alt="Cenoir Studios" class="logo" />
-      <span class="brand">Cenoir Studios</span>
-    </a>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="news.html">News</a>
-      <a href="careers.html">Careers</a>
-    </nav>
-    <button class="nav-toggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+    <a href="index.html" class="logo-link"><img src="./assets/Logo.png" alt="Cenoir Studios" class="logo"><span class="brand">Cenoir Studios</span></a>
+    <nav class="nav-links"><a href="index.html">Home</a><a href="about.html" class="active">About</a><a href="projects.html">Projects</a><a href="news.html">News</a><a href="careers.html">Careers</a></nav>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </header>
 
   <main class="page">
+    <section class="about-hero"><div class="container"><div class="section-header reveal">
+      <span class="section-label" data-c="hero.label"></span>
+      <h1 class="section-title" style="font-size:clamp(2.4rem,5vw,3.5rem);" data-h="hero.title"></h1>
+      <p class="section-desc" style="max-width:620px;" data-c="hero.description"></p>
+    </div></div></section>
 
-    <section class="about-hero">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">About Us</span>
-          <h1 class="section-title" style="font-size: clamp(2.4rem, 5vw, 3.5rem);">We build worlds<br />worth getting lost in.</h1>
-          <p class="section-desc" style="max-width: 620px;">
-            Cenoir Studios is a small and ambitious independent game development studio.
-            We create atmospheric gameplay experiences with strong visual identity, memorable
-            art direction, and stories that linger long after the screen goes dark.
-          </p>
-        </div>
+    <section class="section" style="padding-top:0;"><div class="container">
+      <div id="about-cards" class="about-grid"></div>
+      <div id="about-values" class="value-strip"></div>
+    </div></section>
+
+    <section class="section" style="background:linear-gradient(to bottom,transparent,rgba(212,137,42,0.03),transparent);"><div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-c="journey.label"></span>
+        <h2 class="section-title" data-c="journey.title"></h2>
+        <p class="section-desc" data-c="journey.description"></p>
       </div>
-    </section>
+      <div id="timeline" class="timeline reveal"></div>
 
-    <!-- ═══ VISION + HOW WE WORK ═══ -->
-    <section class="section" style="padding-top: 0;">
-      <div class="container">
-        <div class="about-grid">
-          <div class="card reveal">
-            <h3>Our Vision</h3>
-            <p>
-              We believe games are the most powerful storytelling medium of our generation.
-              Not because of spectacle, but because of immersion — the feeling of being
-              inside a world and shaping it with your choices.
-            </p>
-            <p>
-              Every project at Cenoir starts with a question: what kind of experience do we
-              want the player to carry with them? The mechanics, the visuals, the audio — they
-              all exist in service of that experience.
-            </p>
-          </div>
-          <div class="card reveal reveal-delay-1">
-            <h3>How We Work</h3>
-            <p>
-              Our codebase follows a feature-oriented hybrid architecture with MVP + State Machine
-              patterns, powered by Zenject for dependency injection. Every feature — movement,
-              combat, HUD — lives in its own self-contained module.
-            </p>
-            <p>
-              We run agile sprints coordinated through Trello and Discord, with daily stand-ups
-              and regular retrospectives keeping the team aligned and moving fast.
-            </p>
-          </div>
+      <div style="margin-top:4rem;" class="reveal">
+        <div class="section-header">
+          <span class="section-label" data-c="trailers.label"></span>
+          <h2 class="section-title" data-c="trailers.title"></h2>
+          <p class="section-desc" data-c="trailers.description"></p>
         </div>
-
-        <div class="value-strip">
-          <div class="value-item reveal">
-            <span class="value-icon">◆</span>
-            <h4>Atmosphere First</h4>
-            <p>Mood and tone drive every design decision, from level layout to color grading.</p>
-          </div>
-          <div class="value-item reveal reveal-delay-1">
-            <span class="value-icon">◈</span>
-            <h4>Clean Architecture</h4>
-            <p>Feature-oriented structure with strict namespace conventions and assembly boundaries.</p>
-          </div>
-          <div class="value-item reveal reveal-delay-2">
-            <span class="value-icon">◇</span>
-            <h4>Story That Matters</h4>
-            <p>Narrative is not a wrapper — it's the reason the game exists.</p>
-          </div>
-        </div>
+        <div id="trailer-grid" class="video-grid"></div>
       </div>
-    </section>
+    </div></section>
 
-    <!-- ═══ OUR JOURNEY ═══ -->
-    <section class="section" style="background: linear-gradient(to bottom, transparent, rgba(212,137,42,0.03), transparent);">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">Our Journey</span>
-          <h2 class="section-title">From diploma project to studio.</h2>
-          <p class="section-desc">
-            What started as a university diploma project became a vision too big to put down.
-          </p>
-        </div>
-
-        <div class="timeline reveal">
-          <div class="timeline-item">
-            <span class="timeline-year">2024 — The Spark</span>
-            <h3>NoSaints: The Diploma Project</h3>
-            <p>
-              It all began as a diploma project — a first-person shooter prototype built to prove
-              a concept. The scope was small, but the ambition was anything but. The team discovered
-              they cared more about the world they were building than the grade they'd receive.
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <span class="timeline-year">2025 — Expansion</span>
-            <h3>NoSaints: New Dawn</h3>
-            <p>
-              The diploma was defended, but the project refused to die. NoSaints evolved into
-              New Dawn — a full narrative arc set in a world of airships, crumbling cities, and
-              fractured power structures. The team grew to 9 members, concept art defined the
-              visual identity, and the MVP architecture was established.
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <span class="timeline-year">2026 — Identity</span>
-            <h3>Cenoir Studios & NoSaints: Blue Whale</h3>
-            <p>
-              The team formalized as Cenoir Studios. NoSaints expanded further with "Blue Whale" —
-              a new chapter exploring the interiors, characters, and narrative threads of
-              the game's underground culture. The Blue Whale bar became a symbol of the project's
-              evolution: from a student exercise to a living, breathing world.
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <span class="timeline-year">Now — Building</span>
-            <h3>Active Development</h3>
-            <p>
-              Today, development continues across programming, art, design, and animation.
-              11 team members, a shooter-first design philosophy, and a noir 1930s
-              alternative USA aesthetic driving every decision. Cenoir Studios is small by
-              design — every member shapes the game directly.
-            </p>
-          </div>
-        </div>
-
-        <!-- ═══ ORIGINAL TRAILERS ═══ -->
-        <div style="margin-top: 4rem;" class="reveal">
-          <div class="section-header">
-            <span class="section-label">Where It Started</span>
-            <h2 class="section-title">The original NoSaints trailers.</h2>
-            <p class="section-desc">
-              From the diploma project that started it all — the first two trailers
-              that captured the vision before it had a name.
-            </p>
-          </div>
-          <div class="video-grid">
-            <a href="https://youtu.be/boSoNMq-B-Q" target="_blank" class="video-thumb">
-              <img src="https://img.youtube.com/vi/boSoNMq-B-Q/hqdefault.jpg" alt="NoSaints — Original Trailer" />
-              <div class="video-play-btn">
-                <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
-              </div>
-              <span class="video-label">NoSaints — Original Trailer</span>
-            </a>
-            <a href="https://youtu.be/WZKBSIEfApQ" target="_blank" class="video-thumb">
-              <img src="https://img.youtube.com/vi/WZKBSIEfApQ/hqdefault.jpg" alt="NoSaints — Gameplay Trailer" />
-              <div class="video-play-btn">
-                <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
-              </div>
-              <span class="video-label">NoSaints — Gameplay Trailer</span>
-            </a>
-          </div>
-        </div>
+    <section class="section"><div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-c="team.label"></span>
+        <h2 class="section-title" data-c="team.title"></h2>
+        <p class="section-desc" data-c="team.description"></p>
       </div>
-    </section>
-
-    <!-- ═══ MEET THE TEAM ═══ -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">The Team</span>
-          <h2 class="section-title">Meet the people behind Cenoir.</h2>
-          <p class="section-desc">
-            11 members. 9 core, 2 newest additions. Everyone wears multiple hats and shapes the game directly.
-          </p>
-        </div>
-
-        <!-- ── LEADERSHIP & ENGINEERING ── -->
-        <div class="team-department reveal">
-          <h3 class="team-dept-label">Leadership & Engineering</h3>
-          <div class="team-grid">
-
-            <div class="team-member">
-              <div class="team-avatar" data-photo="DaniilDenysov" data-initials="DD">
-                <div class="team-avatar-placeholder">DD</div>
-              </div>
-              <div class="team-name">Daniil Denysov</div>
-              <div class="team-role">Founder, Lead Programmer & Project Manager</div>
-              <div class="team-fav">Favorite games: Clair Obscur: Expedition 33, Fallout 4, Tom Clancy's Rainbow Six Siege, Metro Exodus, S.T.A.L.K.E.R 2</div>
-            </div>
-
-            <div class="team-member">
-              <div class="team-avatar" data-photo="OleksandrPryimak" data-initials="OP">
-                <div class="team-avatar-placeholder">OP</div>
-              </div>
-              <div class="team-name">Oleksandr Pryimak</div>
-              <div class="team-role">Programmer, Game Designer & Community Manager</div>
-              <div class="team-fav">Favorite games: Counter-Strike 2, Disco Elysium, Cyberpunk 2077</div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- ── GAME DESIGN ── -->
-        <div class="team-department reveal reveal-delay-1">
-          <h3 class="team-dept-label">Game Design</h3>
-          <div class="team-grid">
-
-            <div class="team-member">
-              <div class="team-avatar" data-photo="IliyaRatkevich" data-initials="IR">
-                <div class="team-avatar-placeholder">IR</div>
-              </div>
-              <div class="team-name">Iliya Ratkevich</div>
-              <div class="team-role">Lead Game Designer</div>
-              <div class="team-fav">Favorite games: Escape from Tarkov, Rainbow Six Siege, Titanfall 2</div>
-            </div>
-
-            <div class="team-member">
-              <div class="team-avatar" data-photo="MykhailoPapunitskyi" data-initials="MP">
-                <div class="team-avatar-placeholder">MP</div>
-              </div>
-              <div class="team-name">Mykhailo Papunitskyi</div>
-              <div class="team-role">Lead Level Designer & Game Designer</div>
-              <div class="team-fav">Favorite games: Warcraft III, Warhammer 40k, World of Warcraft</div>
-            </div>
-
-            <div class="team-member">
-              <div class="team-avatar" data-photo="NikitaMurashko" data-initials="NM">
-                <div class="team-avatar-placeholder">NM</div>
-              </div>
-              <div class="team-name">Nikita Murashko</div>
-              <div class="team-role">Narrative Designer</div>
-              <div class="team-fav">Favorite games: Planescape: Torment, Outer Wilds, Firewatch</div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- ── ART ── -->
-        <div class="team-department reveal reveal-delay-2">
-          <h3 class="team-dept-label">Art</h3>
-          <div class="team-grid">
-
-            <div class="team-member">
-              <div class="team-avatar" data-photo="AndreyIvasenko" data-initials="AI">
-                <div class="team-avatar-placeholder">AI</div>
-              </div>
-              <div class="team-name">Andrey Ivasenko</div>
-              <div class="team-role">Art Director & Lead Concept Artist</div>
-              <div class="team-fav">Favorite games: Bioshock, Dishonored, Destiny 2, Control</div>
-            </div>
-
-            <div class="team-member">
-              <div class="team-avatar" data-photo="BohdanPoltoratskyi" data-initials="BP">
-                <div class="team-avatar-placeholder">BP</div>
-              </div>
-              <div class="team-name">Bohdan Poltoratskyi</div>
-              <div class="team-role">Lead 3D Artist & Weapon Artist</div>
-              <div class="team-fav">Favorite games: Fallout: New Vegas, Metro Exodus, Battlefield 1</div>
-            </div>
-
-            <div class="team-member">
-              <div class="team-avatar" data-photo="KarinaAfonina" data-initials="KA">
-                <div class="team-avatar-placeholder">KA</div>
-              </div>
-              <div class="team-name">Karina Afonina</div>
-              <div class="team-role">3D Artist</div>
-              <div class="team-fav">Favorite games: Journey, Gris, Stray, Hollow Knight</div>
-            </div>
-
-            <div class="team-member">
-              <div class="team-avatar" data-photo="LipskiYaroslav" data-initials="LY">
-                <div class="team-avatar-placeholder">LY</div>
-              </div>
-              <div class="team-name">Lipski Yaroslav</div>
-              <div class="team-role">Intern 3D Artist</div>
-              <div class="team-fav">Favorite games: Minecraft</div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- ── ANIMATION ── -->
-        <div class="team-department reveal reveal-delay-3">
-          <h3 class="team-dept-label">Animation</h3>
-          <div class="team-grid">
-
-            <div class="team-member">
-              <div class="team-avatar" data-photo="IrynaPavlova" data-initials="IP">
-                <div class="team-avatar-placeholder">IP</div>
-              </div>
-              <div class="team-name">Iryna Pavlova</div>
-              <div class="team-role">Lead 3D Animator, Character Artist & Technical Artist</div>
-              <div class="team-fav">Favorite games: Backrooms, Cyberpunk 2077, No man’s sky</div>
-            </div>
-
-          </div>
-        </div>
-
-
-
-      </div>
-    </section>
-
+      <div id="team-departments"></div>
+    </div></section>
   </main>
 
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <img src="./assets/Logo.png" alt="Cenoir" />
-        <span>Cenoir Studios</span>
-        <div class="footer-social">
-          <a href="https://x.com/CenoirStudios" target="_blank" class="social-link" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-          <a href="https://linkedin.com/company/cenoir-studios" target="_blank" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-          <a href="https://www.youtube.com/channel/UCj93N51pGqO9jpdDMLw75QQ" target="_blank" class="social-link" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
-          <a href="https://www.instagram.com/cenoir.studios/" target="_blank" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
-          <a href="https://www.tiktok.com/@cenoir.studios" target="_blank" class="social-link" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
-        </div>
-      </div>
-      <div class="footer-columns">
-        <div class="footer-col">
-          <h4>Studio</h4>
-          <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-          <a href="news.html">News</a>
-          <a href="careers.html">Careers</a>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <a href="mailto:contact@cenoirstudios.com">contact@cenoirstudios.com</a>
-          <a href="mailto:careers@cenoirstudios.com">careers@cenoirstudios.com</a>
-          <a href="mailto:support@cenoirstudios.com">support@cenoirstudios.com</a>
-        </div>
-        <div class="footer-col">
-          <h4>Other</h4>
-          <a href="mailto:social@cenoirstudios.com">social@cenoirstudios.com</a>
-          <a href="mailto:legal@cenoirstudios.com">legal@cenoirstudios.com</a>
-        </div>
-      </div>
-      <p class="footer-copy">© 2026 Cenoir Studios. All rights reserved.</p>
+  <footer class="footer"><div class="footer-inner">
+    <div class="footer-brand"><img src="./assets/Logo.png" alt="Cenoir"><span>Cenoir Studios</span><div class="footer-social footer-social-slot"></div></div>
+    <div class="footer-columns">
+      <div class="footer-col"><h4>Studio</h4><a href="about.html">About</a><a href="projects.html">Projects</a><a href="news.html">News</a><a href="careers.html">Careers</a></div>
+      <div class="footer-col"><h4>Contact</h4><a data-email="contact"></a><a data-email="careers"></a><a data-email="support"></a></div>
+      <div class="footer-col"><h4>Other</h4><a data-email="social"></a><a data-email="legal"></a></div>
     </div>
-  </footer>
+    <p class="footer-copy" data-c="copyright"></p>
+  </div></footer>
 
+  <script src="content-data.js"></script>
+  <script src="content-loader.js"></script>
   <script src="main.js"></script>
+  <script>
+    (() => {
+      const data = CL.load('about.json'), shared = CL.load('shared.json');
+      CL.bind(data);
+      CL.renderFooter(shared);
+
+      const cardsBox = document.getElementById('about-cards');
+      (data.cards || []).forEach((card, i) => {
+        const d = document.createElement('div');
+        d.className = 'card reveal' + (i ? ' reveal-delay-' + i : '');
+        d.innerHTML = '<h3>' + card.title + '</h3>' + card.paragraphs.map(p => '<p>' + p + '</p>').join('');
+        cardsBox.appendChild(d);
+      });
+
+      const valBox = document.getElementById('about-values');
+      (data.values || []).forEach((v, i) => {
+        const d = document.createElement('div');
+        d.className = 'value-item reveal' + (i ? ' reveal-delay-' + i : '');
+        d.innerHTML = '<span class="value-icon">' + v.icon + '</span><h4>' + v.title + '</h4><p>' + v.text + '</p>';
+        valBox.appendChild(d);
+      });
+
+      const tlBox = document.getElementById('timeline');
+      (data.journey.milestones || []).forEach(m => {
+        const d = document.createElement('div');
+        d.className = 'timeline-item';
+        d.innerHTML = '<span class="timeline-year">' + m.year + '</span><h3>' + m.title + '</h3><p>' + m.text + '</p>';
+        tlBox.appendChild(d);
+      });
+
+      const vidBox = document.getElementById('trailer-grid');
+      (data.trailers.videos || []).forEach(v => {
+        const a = document.createElement('a');
+        a.href = 'https://youtu.be/' + v.id;
+        a.target = '_blank';
+        a.className = 'video-thumb';
+        a.innerHTML = '<img src="https://img.youtube.com/vi/' + v.id + '/hqdefault.jpg" alt="' + v.caption + '">'
+          + '<div class="video-play-btn"><svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg></div>'
+          + '<span class="video-label">' + v.caption + '</span>';
+        vidBox.appendChild(a);
+      });
+
+      const deptBox = document.getElementById('team-departments');
+      (data.team.departments || []).forEach((dept, di) => {
+        const sec = document.createElement('div');
+        sec.className = 'team-department reveal' + (di ? ' reveal-delay-' + di : '');
+        sec.innerHTML = '<h3 class="team-dept-label">' + dept.name + '</h3><div class="team-grid"></div>';
+        const grid = sec.querySelector('.team-grid');
+        dept.members.forEach(m => {
+          const card = document.createElement('div');
+          card.className = 'team-member';
+          card.innerHTML = '<div class="team-avatar" data-photo="' + m.photo + '"><div class="team-avatar-placeholder">' + m.initials + '</div></div>'
+            + '<div class="team-name">' + m.name + '</div>'
+            + '<div class="team-role">' + m.role + '</div>'
+            + '<div class="team-fav">Favorite games: ' + m.games + '</div>';
+          grid.appendChild(card);
+          CL.probePhoto(card.querySelector('.team-avatar'), m.photo);
+        });
+        deptBox.appendChild(sec);
+      });
+
+      reInitReveal();
+      CL.fixImages();
+    })();
+  </script>
 </body>
 </html>

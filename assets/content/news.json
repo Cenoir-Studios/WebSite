@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "label": "News & Updates",
+    "title": "From the studio.",
+    "description": "Development logs, announcements, and behind-the-scenes notes from the Cenoir team."
+  },
+  "entries": [
+    { "day": "24", "month": "May 2026", "title": "Website Redesign Live", "text": "The Cenoir Studios website has been rebuilt with separate sections for projects, news, and careers. The projects page now features a concept art gallery showcasing environment art from NoSaints: New Dawn.", "tag": "Studio" },
+    { "day": "15", "month": "May 2026", "title": "NoSaints: Combat System Progress", "text": "The combat feature module is taking shape — states for melee, ranged, and ability-based actions are now running through the priority-based state machine. KINEMATION procedural animation is driving weapon sway and recoil.", "tag": "Development" },
+    { "day": "02", "month": "Apr 2026", "title": "Movement System Overhaul", "text": "The character movement feature has been refactored into a clean MVP + State Machine architecture. Idle, Move, Sprint, Jump, Crouch, and Slide states are now ScriptableObject-based and fully priority-driven.", "tag": "Development" },
+    { "day": "10", "month": "Feb 2026", "title": "Environment Concept Art Reveal", "text": "Seven new concept art pieces for NoSaints: New Dawn are now public — featuring the game's signature amber-lit cityscapes, industrial architecture, and the interior of the Blue Whale bar. Art by Andrey Ivasenko.", "tag": "Art" },
+    { "day": "01", "month": "Jan 2026", "title": "Cenoir Studios Founded", "text": "The official founding of Cenoir Studios. A small team, a big vision, and the beginning of NoSaints — our debut project.", "tag": "Studio" }
+  ]
+}

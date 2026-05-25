@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "label": "Careers",
+    "title": "Build something<br>that matters.",
+    "description": "We're a team of 11 building an atmospheric FPS set in a noir 1930s alternative USA. If you care about craft and want to help shape a world from the ground up — we'd love to hear from you."
+  },
+  "roles": [
+    {
+      "title": "Sound Designer",
+      "dept": "🔊 Audio",
+      "location": "🌍 Remote",
+      "type": "🔴 Critical",
+      "about": "NoSaints needs a voice — weapon SFX, atmospheric ambience, UI audio feedback, and spatial sound for our noir 1930s world. This is a critical gap that directly blocks development progress.",
+      "tasks": ["Design weapon firing and reload sound effects", "Create ambient soundscapes (1930s city streets, interiors, rain)", "Design UI audio feedback (menu clicks, notifications, HUD cues)", "Implement spatial audio for multiplayer environments", "Create impact and destruction sound effects"],
+      "tools": ["FMOD or Wwise for integration", "Audacity, Reaper, or equivalent DAW", "Unity audio pipeline"]
+    },
+    {
+      "title": "QA Lead",
+      "dept": "🧪 Quality Assurance",
+      "location": "🌍 Remote",
+      "type": "🟠 High Priority",
+      "about": "Lead the quality assurance process for NoSaints. You'll design test plans, triage bugs, coordinate playtest sessions, and determine build stability for release milestones.",
+      "tasks": ["Design test plans for each development milestone", "Triage and prioritize bug reports", "Coordinate playtest sessions with the team", "Verify bug fixes and run regression testing", "Assess build stability and release readiness", "Track quality metrics across builds"]
+    },
+    {
+      "title": "QA Testers",
+      "dept": "🧪 Quality Assurance",
+      "location": "🌍 Remote",
+      "type": "🟠 High Priority",
+      "about": "Help us find and squash bugs across all game systems. You'll execute test cases, reproduce issues, and ensure stability across platforms.",
+      "tasks": ["Execute test cases across gameplay, UI, and network systems", "Report and reproduce bugs with clear reproduction steps", "Test multiplayer stability and edge cases", "Perform compatibility and performance testing across platforms"]
+    },
+    {
+      "title": "Music Composer",
+      "dept": "🎵 Audio",
+      "location": "🌍 Remote",
+      "type": "📋 Freelance / Contract",
+      "about": "Compose the soundtrack for a noir 1930s alternative USA — jazz-inflected, moody, and atmospheric. From the main theme to adaptive in-game loops that respond to combat and exploration.",
+      "tasks": ["Compose main theme and menu music", "Create adaptive in-game music (combat, exploration, tension)", "Design faction-specific musical motifs", "Mix and master all music tracks"],
+      "tools": ["DAW of choice (Ableton, FL Studio, Reaper)", "FMOD or Wwise for adaptive audio"]
+    },
+    {
+      "title": "Producer",
+      "dept": "📊 Leadership",
+      "location": "🌍 Remote",
+      "type": "📋 Freelance / Contract",
+      "about": "Manage external relations, publishing pipelines, and milestone delivery. You'll handle contracts, coordinate outsourcing, and oversee QA and certification processes.",
+      "tasks": ["Manage relationships with publishers or investors", "Oversee milestone delivery to external stakeholders", "Handle contracts and legal coordination", "Manage outsourcing pipeline", "Coordinate QA and certification processes"]
+    },
+    {
+      "title": "Trailer / Video Editor",
+      "dept": "🎬 Marketing",
+      "location": "🌍 Remote",
+      "type": "📋 Freelance / Contract",
+      "about": "Edit gameplay trailers, devlog videos, and short-form clips for social media. You'll add motion graphics, title cards, and help us tell the NoSaints story to the world.",
+      "tasks": ["Edit gameplay trailers and teasers", "Produce devlog video content", "Create short-form clips for social media (TikTok, Instagram, YouTube Shorts)", "Add motion graphics and title cards"],
+      "tools": ["DaVinci Resolve or Premiere Pro", "After Effects for motion graphics"]
+    }
+  ]
+}

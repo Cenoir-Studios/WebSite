@@ -4,160 +4,82 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelector('.nav-links');
 
     if (toggle && navLinks) {
-        toggle.addEventListener('click', () => {
-            toggle.classList.toggle('open');
-            navLinks.classList.toggle('open');
-        });
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                toggle.classList.remove('open');
-                navLinks.classList.remove('open');
-            });
-        });
+        toggle.addEventListener('click', () => { toggle.classList.toggle('open'); navLinks.classList.toggle('open'); });
+        navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => { toggle.classList.remove('open'); navLinks.classList.remove('open'); }));
     }
 
-    window.addEventListener('scroll', () => {
-        if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 40);
-    }, { passive: true });
+    window.addEventListener('scroll', () => { if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 40); }, { passive: true });
 
     const reveals = document.querySelectorAll('.reveal');
     if (reveals.length) {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
         }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-        reveals.forEach(el => observer.observe(el));
+        reveals.forEach(el => obs.observe(el));
     }
 
-    const carousel = document.querySelector('.carousel-track');
-    if (carousel) {
-        const slides = carousel.querySelectorAll('.carousel-slide');
+    function initCarousel() {
+        const track = document.querySelector('.carousel-track');
+        if (!track) return;
+        const slides = track.querySelectorAll('.carousel-slide');
         const dots = document.querySelectorAll('.carousel-dot');
-        const prevBtn = document.querySelector('.carousel-prev');
-        const nextBtn = document.querySelector('.carousel-next');
         const thumbs = document.querySelectorAll('.gallery-thumb');
-        let current = 0;
-        let autoTimer;
-
-        function goTo(index) {
-            current = ((index % slides.length) + slides.length) % slides.length;
-            carousel.style.transform = `translateX(-${current * 100}%)`;
-            dots.forEach((d, i) => d.classList.toggle('active', i === current));
-            thumbs.forEach((t, i) => t.classList.toggle('active', i === current));
-            resetAuto();
+        const prev = document.querySelector('.carousel-prev');
+        const next = document.querySelector('.carousel-next');
+        let cur = 0, timer;
+        function goTo(i) {
+            cur = ((i % slides.length) + slides.length) % slides.length;
+            track.style.transform = 'translateX(-' + (cur * 100) + '%)';
+            dots.forEach((d, j) => d.classList.toggle('active', j === cur));
+            thumbs.forEach((t, j) => t.classList.toggle('active', j === cur));
+            clearInterval(timer); timer = setInterval(() => goTo(cur + 1), 5000);
         }
-        function resetAuto() {
-            clearInterval(autoTimer);
-            autoTimer = setInterval(() => goTo(current + 1), 5000);
-        }
-        if (prevBtn) prevBtn.addEventListener('click', () => goTo(current - 1));
-        if (nextBtn) nextBtn.addEventListener('click', () => goTo(current + 1));
-        dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
-        thumbs.forEach((thumb, i) => thumb.addEventListener('click', () => goTo(i)));
-        resetAuto();
+        if (prev) prev.addEventListener('click', () => goTo(cur - 1));
+        if (next) next.addEventListener('click', () => goTo(cur + 1));
+        dots.forEach((d, i) => d.addEventListener('click', () => goTo(i)));
+        thumbs.forEach((t, i) => t.addEventListener('click', () => goTo(i)));
+        timer = setInterval(() => goTo(cur + 1), 5000);
     }
+    initCarousel();
 
     const lightbox = document.getElementById('lightbox');
     if (lightbox) {
         const lbImg = lightbox.querySelector('img');
-        const lbClose = lightbox.querySelector('.lightbox-close');
         document.querySelectorAll('[data-lightbox]').forEach(el => {
-            el.addEventListener('click', (e) => {
-                e.stopPropagation();
-                lbImg.src = el.dataset.lightbox || el.querySelector('img')?.src || el.src;
-                lightbox.classList.add('open');
-            });
+            el.addEventListener('click', e => { e.stopPropagation(); lbImg.src = el.dataset.lightbox; lightbox.classList.add('open'); });
         });
         lightbox.addEventListener('click', () => lightbox.classList.remove('open'));
+        const lbClose = lightbox.querySelector('.lightbox-close');
         if (lbClose) lbClose.addEventListener('click', () => lightbox.classList.remove('open'));
-        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') lightbox.classList.remove('open'); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') lightbox.classList.remove('open'); });
     }
 
-    document.querySelectorAll('.role-header').forEach(header => {
-        header.addEventListener('click', () => {
-            const card = header.closest('.role-card');
-            const wasExpanded = card.classList.contains('expanded');
+    document.querySelectorAll('.role-header').forEach(h => {
+        h.addEventListener('click', () => {
+            const card = h.closest('.role-card');
+            const was = card.classList.contains('expanded');
             document.querySelectorAll('.role-card.expanded').forEach(c => c.classList.remove('expanded'));
-            if (!wasExpanded) card.classList.add('expanded');
+            if (!was) card.classList.add('expanded');
         });
     });
 
-    const downloadModal = document.getElementById('download-modal');
-    if (downloadModal) {
-        const closeBtn = downloadModal.querySelector('.modal-close');
-
-        document.querySelectorAll('[data-download-trigger]').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                downloadModal.classList.add('open');
-            });
-        });
-
-        downloadModal.addEventListener('click', (e) => {
-            if (e.target === downloadModal) downloadModal.classList.remove('open');
-        });
-        if (closeBtn) closeBtn.addEventListener('click', () => downloadModal.classList.remove('open'));
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') downloadModal.classList.remove('open');
-        });
+    const dlModal = document.getElementById('download-modal');
+    if (dlModal) {
+        document.querySelectorAll('[data-download-trigger]').forEach(b => b.addEventListener('click', e => { e.preventDefault(); dlModal.classList.add('open'); }));
+        dlModal.addEventListener('click', e => { if (e.target === dlModal) dlModal.classList.remove('open'); });
+        const cls = dlModal.querySelector('.modal-close');
+        if (cls) cls.addEventListener('click', () => dlModal.classList.remove('open'));
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') dlModal.classList.remove('open'); });
     }
 
-    document.querySelectorAll('.team-avatar[data-photo]').forEach(avatar => {
-        const name = avatar.dataset.photo;
-        const exts = ['png', 'jpg', 'jpeg', 'PNG', 'JPG', 'JPEG'];
-        let i = 0;
-
-        function attempt() {
-            if (i >= exts.length) return;
-            const url = './assets/Team/' + name + '.' + exts[i];
-            i++;
-            const img = new Image();
-            img.onload = function () {
-                if (img.naturalWidth > 0) {
-                    img.style.cssText = 'width:100%;height:100%;object-fit:cover;display:block;';
-                    const p = avatar.querySelector('.team-avatar-placeholder');
-                    if (p) p.style.display = 'none';
-                    avatar.insertBefore(img, avatar.firstChild);
-                }
-            };
-            img.onerror = attempt;
-            img.src = url;
-        }
-
-        attempt();
-    });
-
-    document.querySelectorAll('img[src]').forEach(img => {
-        if (img.closest('.team-avatar')) return;
-
-        function tryAlts() {
-            const src = img.getAttribute('src');
-            const dot = src.lastIndexOf('.');
-            if (dot === -1) return;
-            const base = src.substring(0, dot);
-            const currentExt = src.substring(dot + 1);
-            const alts = ['png', 'jpg', 'jpeg', 'PNG', 'JPG', 'JPEG'].filter(e => e !== currentExt);
-            let j = 0;
-            function next() {
-                if (j >= alts.length) return;
-                img.onerror = next;
-                img.setAttribute('src', base + '.' + alts[j]);
-                j++;
-            }
-            next();
-        }
-
-        if (img.complete && img.naturalWidth === 0) {
-            tryAlts();
-        } else {
-            img.addEventListener('error', function handler() {
-                img.removeEventListener('error', handler);
-                tryAlts();
-            });
-        }
-    });
+    CL.fixImages();
 });
+
+function reInitReveal() {
+    document.querySelectorAll('.reveal:not(.visible)').forEach(el => {
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        obs.observe(el);
+    });
+}

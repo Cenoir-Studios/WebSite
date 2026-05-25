@@ -1,0 +1,18 @@
+{
+  "brand": "Cenoir Studios",
+  "copyright": "© 2026 Cenoir Studios. All rights reserved.",
+  "socials": [
+    { "label": "X", "url": "https://x.com/CenoirStudios", "icon": "x" },
+    { "label": "LinkedIn", "url": "https://linkedin.com/company/cenoir-studios", "icon": "linkedin" },
+    { "label": "YouTube", "url": "https://www.youtube.com/channel/UCj93N51pGqO9jpdDMLw75QQ", "icon": "youtube" },
+    { "label": "Instagram", "url": "https://www.instagram.com/cenoir.studios/", "icon": "instagram" },
+    { "label": "TikTok", "url": "https://www.tiktok.com/@cenoir.studios", "icon": "tiktok" }
+  ],
+  "emails": {
+    "contact": "contact@cenoirstudios.com",
+    "careers": "careers@cenoirstudios.com",
+    "support": "support@cenoirstudios.com",
+    "social": "social@cenoirstudios.com",
+    "legal": "legal@cenoirstudios.com"
+  }
+}

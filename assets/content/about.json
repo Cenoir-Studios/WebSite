@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "label": "About Us",
+    "title": "We build worlds<br>worth getting lost in.",
+    "description": "Cenoir Studios is a small and ambitious independent game development studio. We create atmospheric gameplay experiences with strong visual identity, memorable art direction, and stories that linger long after the screen goes dark."
+  },
+  "cards": [
+    {
+      "title": "Our Vision",
+      "paragraphs": [
+        "We believe games are the most powerful storytelling medium of our generation. Not because of spectacle, but because of immersion — the feeling of being inside a world and shaping it with your choices.",
+        "Every project at Cenoir starts with a question: what kind of experience do we want the player to carry with them? The mechanics, the visuals, the audio — they all exist in service of that experience."
+      ]
+    },
+    {
+      "title": "How We Work",
+      "paragraphs": [
+        "Our codebase follows a feature-oriented hybrid architecture with MVP + State Machine patterns, powered by Zenject for dependency injection. Every feature — movement, combat, HUD — lives in its own self-contained module.",
+        "We run agile sprints coordinated through Trello and Discord, with daily stand-ups and regular retrospectives keeping the team aligned and moving fast."
+      ]
+    }
+  ],
+  "values": [
+    { "icon": "◆", "title": "Atmosphere First", "text": "Mood and tone drive every design decision, from level layout to color grading." },
+    { "icon": "◈", "title": "Clean Architecture", "text": "Feature-oriented structure with strict namespace conventions and assembly boundaries." },
+    { "icon": "◇", "title": "Story That Matters", "text": "Narrative is not a wrapper — it's the reason the game exists." }
+  ],
+  "journey": {
+    "label": "Our Journey",
+    "title": "From diploma project to studio.",
+    "description": "What started as a university diploma project became a vision too big to put down.",
+    "milestones": [
+      {
+        "year": "2024 — The Spark",
+        "title": "NoSaints: The Diploma Project",
+        "text": "It all began as a diploma project — a first-person shooter prototype built to prove a concept. The scope was small, but the ambition was anything but. The team discovered they cared more about the world they were building than the grade they'd receive."
+      },
+      {
+        "year": "2025 — Expansion",
+        "title": "NoSaints: New Dawn",
+        "text": "The diploma was defended, but the project refused to die. NoSaints evolved into New Dawn — a full narrative arc set in a world of airships, crumbling cities, and fractured power structures. The team grew to 9 members, concept art defined the visual identity, and the MVP architecture was established."
+      },
+      {
+        "year": "2026 — Identity",
+        "title": "Cenoir Studios & NoSaints: Blue Whale",
+        "text": "The team formalized as Cenoir Studios. NoSaints expanded further with \"Blue Whale\" — a new chapter exploring the interiors, characters, and narrative threads of the game's underground culture. The Blue Whale bar became a symbol of the project's evolution: from a student exercise to a living, breathing world."
+      },
+      {
+        "year": "Now — Building",
+        "title": "Active Development",
+        "text": "Today, development continues across programming, art, design, and animation. 11 team members, a shooter-first design philosophy, and a noir 1930s alternative USA aesthetic driving every decision. Cenoir Studios is small by design — every member shapes the game directly."
+      }
+    ]
+  },
+  "trailers": {
+    "label": "Where It Started",
+    "title": "The original NoSaints trailers.",
+    "description": "From the diploma project that started it all — the first two trailers that captured the vision before it had a name.",
+    "videos": [
+      { "id": "boSoNMq-B-Q", "caption": "NoSaints — Original Trailer" },
+      { "id": "WZKBSIEfApQ", "caption": "NoSaints — Gameplay Trailer" }
+    ]
+  },
+  "team": {
+    "label": "The Team",
+    "title": "Meet the people behind Cenoir.",
+    "description": "11 members. 9 core, 2 newest additions. Everyone wears multiple hats and shapes the game directly.",
+    "departments": [
+      {
+        "name": "Leadership & Engineering",
+        "members": [
+          { "name": "Daniil Denysov", "photo": "DaniilDenysov", "initials": "DD", "role": "Founder, Lead Programmer & Project Manager", "games": "Half-Life 2, Deus Ex, DOOM Eternal, System Shock" },
+          { "name": "Oleksandr Pryimak", "photo": "OleksandrPryimak", "initials": "OP", "role": "Programmer, Game Designer & Community Manager", "games": "Counter-Strike 2, Disco Elysium, Cyberpunk 2077" }
+        ]
+      },
+      {
+        "name": "Game Design",
+        "members": [
+          { "name": "Iliya Ratkevich", "photo": "IliyaRatkevich", "initials": "IR", "role": "Lead Game Designer", "games": "Escape from Tarkov, Rainbow Six Siege, Titanfall 2" },
+          { "name": "Mykhailo Papunitskyi", "photo": "MykhailoPapunitskyi", "initials": "MP", "role": "Lead Level Designer & Game Designer", "games": "Warcraft III, Warhammer 40k, World of Warcraft" },
+          { "name": "Nikita Murashko", "photo": "NikitaMurashko", "initials": "NM", "role": "Narrative Designer", "games": "Planescape: Torment, Outer Wilds, Firewatch" }
+        ]
+      },
+      {
+        "name": "Art",
+        "members": [
+          { "name": "Andrey Ivasenko", "photo": "AndreyIvasenko", "initials": "AI", "role": "Art Director & Lead Concept Artist", "games": "Bioshock, Dishonored, Destiny 2, Control" },
+          { "name": "Bohdan Poltoratskyi", "photo": "BohdanPoltoratskyi", "initials": "BP", "role": "Lead 3D Artist & Weapon Artist", "games": "Fallout: New Vegas, Metro Exodus, Battlefield 1" },
+          { "name": "Karina Afonina", "photo": "KarinaAfonina", "initials": "KA", "role": "3D Artist", "games": "Journey, Gris, Stray, Hollow Knight" },
+          { "name": "Lipski Yaroslav", "photo": "LipskiYaroslav", "initials": "LY", "role": "Intern 3D Artist", "games": "Minecraft" }
+        ]
+      },
+      {
+        "name": "Animation",
+        "members": [
+          { "name": "Iryna Pavlova", "photo": "IrynaPavlova", "initials": "IP", "role": "Lead 3D Animator, Character Artist & Technical Artist", "games": "Backrooms, Cyberpunk 2077, No Man's Sky" }
+        ]
+      }
+    ]
+  }
+}
