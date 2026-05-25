@@ -1,6 +1,6 @@
 const { useState, useEffect, useRef, Component } = React;
 const html = htm.bind(React.createElement);
-const PHOTO_EXTS = ['png', 'jpg', 'jpeg', 'PNG', 'JPG', 'JPEG'];
+const PHOTO_EXTS = ['png', 'jpg'];
 const D = (page) => CONTENT[page] || {};
 
 /* ═══════ ERROR BOUNDARY ═══════ */
@@ -94,8 +94,9 @@ function Navbar({ route }) {
   const link = (to, label) => html`<a href=${'#/' + to} class=${route === to ? 'active' : ''}>${label}</a>`;
   return html`<header class=${'navbar' + (scrolled ? ' scrolled' : '')}>
     <a href="#/" class="logo-link"><${SmartImg} src="./assets/Logo.png" alt="Cenoir" className="logo" /><span class="brand">Cenoir Studios</span></a>
+    ${open && html`<div class="nav-backdrop" onClick=${() => setOpen(false)} />`}
     <nav class=${'nav-links' + (open ? ' open' : '')}>${link('','Home')}${link('about','About')}${link('team','Team')}${link('projects','Projects')}${link('news','News')}${link('careers','Careers')}</nav>
-    <button class=${'nav-toggle' + (open ? ' open' : '')} onClick=${() => setOpen(!open)}><span /><span /><span /></button>
+    <button class=${'nav-toggle' + (open ? ' open' : '')} onClick=${() => setOpen(!open)} aria-label="Menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
   </header>`;
 }
 
