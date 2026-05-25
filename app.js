@@ -96,7 +96,7 @@ function Navbar({ route }) {
     <a href="#/" class="logo-link"><${SmartImg} src="./assets/Logo.png" alt="Cenoir" className="logo" /><span class="brand">Cenoir Studios</span></a>
     ${open && html`<div class="nav-backdrop" onClick=${() => setOpen(false)} />`}
     <nav class=${'nav-links' + (open ? ' open' : '')}>${link('','Home')}${link('about','About')}${link('team','Team')}${link('projects','Projects')}${link('news','News')}${link('careers','Careers')}</nav>
-    <button class=${'nav-toggle' + (open ? ' open' : '')} onClick=${() => setOpen(!open)} aria-label="Menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+    <button class=${'nav-toggle' + (open ? ' open' : '')} onClick=${() => setOpen(!open)} aria-label="Menu"><div class="hamburger" /></button>
   </header>`;
 }
 
