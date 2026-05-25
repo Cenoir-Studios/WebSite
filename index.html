@@ -2,93 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Cenoir Studios — Independent game development studio creating dark, narrative-driven experiences.">
   <title>Cenoir Studios</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="./assets/Logo.png" type="image/png">
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/htm@3.1.1/dist/htm.js"></script>
 </head>
 <body>
-  <header class="navbar">
-    <a href="index.html" class="logo-link"><img src="./assets/Logo.png" alt="Cenoir Studios" class="logo"><span class="brand">Cenoir Studios</span></a>
-    <nav class="nav-links"><a href="index.html" class="active">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="news.html">News</a><a href="careers.html">Careers</a></nav>
-    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-  </header>
-
-  <main class="page">
-    <section class="hero">
-      <div class="hero-content">
-        <span class="hero-tag" data-c="hero.tag"></span>
-        <h1 data-h="hero.title"></h1>
-        <p class="hero-desc" data-c="hero.description"></p>
-        <div class="hero-actions">
-          <a class="btn btn--primary" data-href="hero.cta_primary.href" data-c="hero.cta_primary.text"></a>
-          <a class="btn btn--ghost" data-href="hero.cta_secondary.href" data-c="hero.cta_secondary.text"></a>
-        </div>
-      </div>
-    </section>
-    <div class="container"><div class="divider"></div></div>
-    <section class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label" data-c="featured.label"></span>
-          <h2 class="section-title" data-c="featured.title"></h2>
-          <p class="section-desc" data-c="featured.description"></p>
-        </div>
-        <div id="featured-images" style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem;"></div>
-        <div class="reveal reveal-delay-3" style="text-align:center;"><a href="projects.html" class="btn btn--ghost">View Full Project →</a></div>
-      </div>
-    </section>
-    <section class="section" style="background:linear-gradient(to bottom,transparent,rgba(212,137,42,0.02),transparent);">
-      <div class="container"><div id="pillars" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;"></div></div>
-    </section>
-  </main>
-
-  <footer class="footer"><div class="footer-inner">
-    <div class="footer-brand"><img src="./assets/Logo.png" alt="Cenoir"><span>Cenoir Studios</span><div class="footer-social footer-social-slot"></div></div>
-    <div class="footer-columns">
-      <div class="footer-col"><h4>Studio</h4><a href="about.html">About</a><a href="projects.html">Projects</a><a href="news.html">News</a><a href="careers.html">Careers</a></div>
-      <div class="footer-col"><h4>Contact</h4><a data-email="contact"></a><a data-email="careers"></a><a data-email="support"></a></div>
-      <div class="footer-col"><h4>Other</h4><a data-email="social"></a><a data-email="legal"></a></div>
-    </div>
-    <p class="footer-copy" data-c="copyright"></p>
-  </div></footer>
-
-  <template id="tpl-pillar">
-    <div class="card reveal">
-      <span style="font-size:1.6rem;display:block;margin-bottom:0.75rem;" data-tpl="icon"></span>
-      <h3 style="font-size:1.1rem;font-weight:600;margin-bottom:0.5rem;" data-tpl="title"></h3>
-      <p data-tpl="text"></p>
-    </div>
-  </template>
-
+  <div id="root"></div>
   <script src="content-data.js"></script>
-  <script src="content-loader.js"></script>
-  <script src="main.js"></script>
-  <script>
-    (() => {
-      const data = CL.load('index.json'), shared = CL.load('shared.json');
-      CL.bind(data);
-      CL.renderFooter(shared);
-
-      const imgBox = document.getElementById('featured-images');
-      (data.featured.images || []).forEach((img, i) => {
-        const d = document.createElement('div');
-        d.className = 'reveal reveal-delay-' + (i + 1);
-        d.style.cssText = 'border-radius:16px;overflow:hidden;aspect-ratio:16/9;';
-        d.innerHTML = '<img src="' + img.src + '" alt="' + img.alt + '" style="width:100%;height:100%;object-fit:cover;">';
-        imgBox.appendChild(d);
-      });
-
-      CL.renderList(document.getElementById('pillars'), 'tpl-pillar', data.pillars, (clone, item) => {
-        clone.querySelector('[data-tpl="icon"]').textContent = item.icon;
-        clone.querySelector('[data-tpl="title"]').textContent = item.title;
-        clone.querySelector('[data-tpl="text"]').textContent = item.text;
-      });
-
-      reInitReveal();
-      CL.fixImages();
-    })();
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>
