@@ -1,4 +1,4 @@
-/* Auto-generated from assets/content/*.json — fallback for when fetch fails */
+/* Auto-generated from assets/content/*.json — do not edit directly */
 const CONTENT = {
   shared: {
   "brand": "Cenoir Studios",
@@ -165,104 +165,104 @@ const CONTENT = {
         "caption": "NoSaints — Gameplay Trailer"
       }
     ]
-  },
-  "team": {
-    "label": "The Team",
-    "title": "Meet the people behind Cenoir.",
-    "description": "11 members. 9 core, 2 newest additions. Everyone wears multiple hats and shapes the game directly.",
-    "departments": [
-      {
-        "name": "Leadership & Engineering",
-        "members": [
-          {
-            "name": "Daniil Denysov",
-            "photo": "DaniilDenysov",
-            "initials": "DD",
-            "role": "Founder, Lead Programmer & Project Manager",
-            "games": "Half-Life 2, Deus Ex, DOOM Eternal, System Shock"
-          },
-          {
-            "name": "Oleksandr Pryimak",
-            "photo": "OleksandrPryimak",
-            "initials": "OP",
-            "role": "Programmer, Game Designer & Community Manager",
-            "games": "Counter-Strike 2, Disco Elysium, Cyberpunk 2077"
-          }
-        ]
-      },
-      {
-        "name": "Game Design",
-        "members": [
-          {
-            "name": "Iliya Ratkevich",
-            "photo": "IliyaRatkevich",
-            "initials": "IR",
-            "role": "Lead Game Designer",
-            "games": "Escape from Tarkov, Rainbow Six Siege, Titanfall 2"
-          },
-          {
-            "name": "Mykhailo Papunitskyi",
-            "photo": "MykhailoPapunitskyi",
-            "initials": "MP",
-            "role": "Lead Level Designer & Game Designer",
-            "games": "Warcraft III, Warhammer 40k, World of Warcraft"
-          },
-          {
-            "name": "Nikita Murashko",
-            "photo": "NikitaMurashko",
-            "initials": "NM",
-            "role": "Narrative Designer",
-            "games": "Planescape: Torment, Outer Wilds, Firewatch"
-          }
-        ]
-      },
-      {
-        "name": "Art",
-        "members": [
-          {
-            "name": "Andrey Ivasenko",
-            "photo": "AndreyIvasenko",
-            "initials": "AI",
-            "role": "Art Director & Lead Concept Artist",
-            "games": "Bioshock, Dishonored, Destiny 2, Control"
-          },
-          {
-            "name": "Bohdan Poltoratskyi",
-            "photo": "BohdanPoltoratskyi",
-            "initials": "BP",
-            "role": "Lead 3D Artist & Weapon Artist",
-            "games": "Fallout: New Vegas, Metro Exodus, Battlefield 1"
-          },
-          {
-            "name": "Karina Afonina",
-            "photo": "KarinaAfonina",
-            "initials": "KA",
-            "role": "3D Artist",
-            "games": "Journey, Gris, Stray, Hollow Knight"
-          },
-          {
-            "name": "Lipski Yaroslav",
-            "photo": "LipskiYaroslav",
-            "initials": "LY",
-            "role": "Intern 3D Artist",
-            "games": "Minecraft"
-          }
-        ]
-      },
-      {
-        "name": "Animation",
-        "members": [
-          {
-            "name": "Iryna Pavlova",
-            "photo": "IrynaPavlova",
-            "initials": "IP",
-            "role": "Lead 3D Animator, Character Artist & Technical Artist",
-            "games": "Backrooms, Cyberpunk 2077, No Man's Sky"
-          }
-        ]
-      }
-    ]
   }
+},
+  team: {
+  "label": "The Team",
+  "title": "Meet the people behind Cenoir.",
+  "description": "11 members. 9 core, 2 newest additions. Everyone wears multiple hats and shapes the game directly.",
+  "departments": [
+    {
+      "name": "Leadership & Engineering",
+      "members": [
+        {
+          "name": "Daniil Denysov",
+          "photo": "DaniilDenysov",
+          "initials": "DD",
+          "role": "Founder, Lead Programmer & Project Manager",
+          "games": "Half-Life 2, Deus Ex, DOOM Eternal, System Shock"
+        },
+        {
+          "name": "Oleksandr Pryimak",
+          "photo": "OleksandrPryimak",
+          "initials": "OP",
+          "role": "Programmer, Game Designer & Community Manager",
+          "games": "Counter-Strike 2, Disco Elysium, Cyberpunk 2077"
+        }
+      ]
+    },
+    {
+      "name": "Game Design",
+      "members": [
+        {
+          "name": "Iliya Ratkevich",
+          "photo": "IliyaRatkevich",
+          "initials": "IR",
+          "role": "Lead Game Designer",
+          "games": "Escape from Tarkov, Rainbow Six Siege, Titanfall 2"
+        },
+        {
+          "name": "Mykhailo Papunitskyi",
+          "photo": "MykhailoPapunitskyi",
+          "initials": "MP",
+          "role": "Lead Level Designer & Game Designer",
+          "games": "Warcraft III, Warhammer 40k, World of Warcraft"
+        },
+        {
+          "name": "Nikita Murashko",
+          "photo": "NikitaMurashko",
+          "initials": "NM",
+          "role": "Narrative Designer",
+          "games": "Planescape: Torment, Outer Wilds, Firewatch"
+        }
+      ]
+    },
+    {
+      "name": "Art",
+      "members": [
+        {
+          "name": "Andrey Ivasenko",
+          "photo": "AndreyIvasenko",
+          "initials": "AI",
+          "role": "Art Director & Lead Concept Artist",
+          "games": "Bioshock, Dishonored, Destiny 2, Control"
+        },
+        {
+          "name": "Bohdan Poltoratskyi",
+          "photo": "BohdanPoltoratskyi",
+          "initials": "BP",
+          "role": "Lead 3D Artist & Weapon Artist",
+          "games": "Fallout: New Vegas, Metro Exodus, Battlefield 1"
+        },
+        {
+          "name": "Karina Afonina",
+          "photo": "KarinaAfonina",
+          "initials": "KA",
+          "role": "3D Artist",
+          "games": "Journey, Gris, Stray, Hollow Knight"
+        },
+        {
+          "name": "Lipski Yaroslav",
+          "photo": "LipskiYaroslav",
+          "initials": "LY",
+          "role": "Intern 3D Artist",
+          "games": "Minecraft"
+        }
+      ]
+    },
+    {
+      "name": "Animation",
+      "members": [
+        {
+          "name": "Iryna Pavlova",
+          "photo": "IrynaPavlova",
+          "initials": "IP",
+          "role": "Lead 3D Animator, Character Artist & Technical Artist",
+          "games": "Backrooms, Cyberpunk 2077, No Man's Sky"
+        }
+      ]
+    }
+  ]
 },
   projects: {
   "hero": {

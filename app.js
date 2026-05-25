@@ -94,7 +94,7 @@ function Navbar({ route }) {
   const link = (to, label) => html`<a href=${'#/' + to} class=${route === to ? 'active' : ''}>${label}</a>`;
   return html`<header class=${'navbar' + (scrolled ? ' scrolled' : '')}>
     <a href="#/" class="logo-link"><${SmartImg} src="./assets/Logo.png" alt="Cenoir" className="logo" /><span class="brand">Cenoir Studios</span></a>
-    <nav class=${'nav-links' + (open ? ' open' : '')}>${link('','Home')}${link('about','About')}${link('projects','Projects')}${link('news','News')}${link('careers','Careers')}</nav>
+    <nav class=${'nav-links' + (open ? ' open' : '')}>${link('','Home')}${link('about','About')}${link('team','Team')}${link('projects','Projects')}${link('news','News')}${link('careers','Careers')}</nav>
     <button class=${'nav-toggle' + (open ? ' open' : '')} onClick=${() => setOpen(!open)}><span /><span /><span /></button>
   </header>`;
 }
@@ -107,7 +107,7 @@ function Footer() {
   return html`<footer class="footer"><div class="footer-inner">
     <div class="footer-brand"><${SmartImg} src="./assets/Logo.png" alt="Cenoir" /><span>Cenoir Studios</span><${Socials} items=${s.socials} /></div>
     <div class="footer-columns">
-      <div class="footer-col"><h4>Studio</h4><a href="#/">Home</a><a href="#/about">About</a><a href="#/projects">Projects</a><a href="#/news">News</a><a href="#/careers">Careers</a></div>
+      <div class="footer-col"><h4>Studio</h4><a href="#/">Home</a><a href="#/about">About</a><a href="#/team">Team</a><a href="#/projects">Projects</a><a href="#/news">News</a><a href="#/careers">Careers</a></div>
       <div class="footer-col"><h4>Contact</h4>${ml('contact')}${ml('careers')}${ml('support')}</div>
       <div class="footer-col"><h4>Other</h4>${ml('social')}${ml('legal')}</div>
     </div>
@@ -152,7 +152,6 @@ function AboutPage() {
   const h = d.hero || {};
   const j = d.journey || {};
   const tr = d.trailers || {};
-  const tm = d.team || {};
   return html`<main class="page">
     <section class="about-hero"><div class="container"><${Reveal}><div class="section-header">
       <span class="section-label">${h.label}</span>
@@ -180,11 +179,20 @@ function AboutPage() {
         <img src=${'https://img.youtube.com/vi/'+v.id+'/hqdefault.jpg'} alt=${v.caption} />
         <div class="video-play-btn"><svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg></div>
         <span class="video-label">${v.caption}</span></a>`)}</div><//></div></section>
-    <section class="section"><div class="container">
-      <${Reveal}><div class="section-header">
-        <span class="section-label">${tm.label}</span><h2 class="section-title">${tm.title}</h2><p class="section-desc">${tm.description}</p>
-      </div><//>
-      ${(tm.departments||[]).map((dept, di) => html`<${Reveal} key=${di} delay=${Math.min(di,3)} className="team-department">
+  </main>`;
+}
+
+/* ═══════ TEAM ═══════ */
+function TeamPage() {
+  const d = D('team');
+  return html`<main class="page">
+    <section class="about-hero"><div class="container"><${Reveal}><div class="section-header">
+      <span class="section-label">${d.label}</span>
+      <h1 class="section-title page-title">${d.title}</h1>
+      <p class="section-desc">${d.description}</p>
+    </div><//></div></section>
+    <section class="section" style=${{ paddingTop:0 }}><div class="container">
+      ${(d.departments||[]).map((dept, di) => html`<${Reveal} key=${di} delay=${Math.min(di,3)} className="team-department">
         <h3 class="team-dept-label">${dept.name}</h3>
         <div class="team-grid">${dept.members.map(m => html`<div key=${m.photo} class="team-member">
           <${TeamAvatar} photo=${m.photo} initials=${m.initials} />
@@ -321,14 +329,14 @@ function useRoute() {
 
 function App() {
   const route = useRoute();
-  const pages = { '': HomePage, about: AboutPage, projects: ProjectsPage, news: NewsPage, careers: CareersPage };
+  const pages = { '': HomePage, about: AboutPage, team: TeamPage, projects: ProjectsPage, news: NewsPage, careers: CareersPage };
   const Page = pages[route] || HomePage;
   return html`<${Navbar} route=${route} /><${ErrorBoundary}><${Page} /><//><${Footer} />`;
 }
 
 /* Fetch JSON files, overwrite CONTENT, then mount React */
 (async function boot() {
-  const names = ['shared', 'index', 'about', 'projects', 'news', 'careers'];
+  const names = ['shared', 'index', 'about', 'team', 'projects', 'news', 'careers'];
   const fetches = names.map(async (name) => {
     try {
       const res = await fetch('./assets/content/' + name + '.json');

@@ -8,7 +8,7 @@ import json, os
 
 CONTENT_DIR = os.path.join(os.path.dirname(__file__), 'assets', 'content')
 OUTPUT = os.path.join(os.path.dirname(__file__), 'content-data.js')
-FILES = ['shared', 'index', 'about', 'projects', 'news', 'careers']
+FILES = ['shared', 'index', 'about', 'team', 'projects', 'news', 'careers']
 
 parts = []
 for name in FILES:
