@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join Cenoir Studios — open positions for sound designers, QA testers, producers, and more.">
+  <title>Careers — Cenoir Studios</title>
+  <link rel="stylesheet" href="style.css"><link rel="icon" href="./assets/Logo.png" type="image/png">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo-link"><img src="./assets/Logo.png" alt="Cenoir Studios" class="logo"><span class="brand">Cenoir Studios</span></a>
+    <nav class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="news.html">News</a><a href="careers.html" class="active">Careers</a></nav>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <main class="page">
+    <section class="careers-hero"><div class="container"><div class="careers-intro reveal">
+      <span class="section-label" data-c="hero.label"></span>
+      <h1 class="section-title" style="font-size:clamp(2.4rem,5vw,3.5rem);" data-h="hero.title"></h1>
+      <p data-c="hero.description"></p>
+    </div></div></section>
+
+    <section class="section" style="padding-top:0;"><div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Open Roles</span>
+        <h2 class="section-title">Current opportunities</h2>
+        <p class="section-desc">Click a role to see the full description and apply.</p>
+      </div>
+      <div id="roles-list" class="open-roles"></div>
+      <div class="contact-block reveal">
+        <h3>Don't see your role?</h3>
+        <p>We're always open to hearing from passionate people. Send us your portfolio and tell us what you'd bring to the team.</p>
+        <a href="mailto:careers@cenoirstudios.com" class="btn btn--primary">Get in Touch</a>
+      </div>
+    </div></section>
+  </main>
+
+  <footer class="footer"><div class="footer-inner">
+    <div class="footer-brand"><img src="./assets/Logo.png" alt="Cenoir"><span>Cenoir Studios</span><div class="footer-social footer-social-slot"></div></div>
+    <div class="footer-columns">
+      <div class="footer-col"><h4>Studio</h4><a href="about.html">About</a><a href="projects.html">Projects</a><a href="news.html">News</a><a href="careers.html">Careers</a></div>
+      <div class="footer-col"><h4>Contact</h4><a data-email="contact"></a><a data-email="careers"></a><a data-email="support"></a></div>
+      <div class="footer-col"><h4>Other</h4><a data-email="social"></a><a data-email="legal"></a></div>
+    </div>
+    <p class="footer-copy" data-c="copyright"></p>
+  </div></footer>
+
+  <script src="content-data.js"></script>
+  <script src="content-loader.js"></script>
+  <script src="main.js"></script>
+  <script>
+    (() => {
+      const data = CL.load('careers.json'), shared = CL.load('shared.json');
+      CL.bind(data);
+      CL.renderFooter(shared);
+
+      const list = document.getElementById('roles-list');
+      (data.roles || []).forEach((role, i) => {
+        const card = document.createElement('div');
+        card.className = 'role-card reveal' + (i ? ' reveal-delay-' + Math.min(i, 4) : '');
+
+        let bodyHTML = '<h4>About the Role</h4><p>' + role.about + '</p>';
+        bodyHTML += '<h4>What You\'ll Do</h4><ul>' + role.tasks.map(t => '<li>' + t + '</li>').join('') + '</ul>';
+        if (role.tools) bodyHTML += '<h4>Tools</h4><ul>' + role.tools.map(t => '<li>' + t + '</li>').join('') + '</ul>';
+        bodyHTML += '<div class="role-apply-row"><a href="mailto:' + shared.emails.careers + '?subject=Application: ' + role.title + '" class="btn btn--primary btn--small">Apply Now →</a></div>';
+
+        card.innerHTML = '<div class="role-header">'
+          + '<div class="role-info"><h3>' + role.title + '</h3><div class="role-meta"><span>' + role.dept + '</span><span>' + role.location + '</span><span>' + role.type + '</span></div></div>'
+          + '<button class="role-toggle" aria-label="Expand">+</button></div>'
+          + '<div class="role-body"><div class="role-body-inner">' + bodyHTML + '</div></div>';
+
+        card.querySelector('.role-header').addEventListener('click', () => {
+          const was = card.classList.contains('expanded');
+          list.querySelectorAll('.role-card.expanded').forEach(c => c.classList.remove('expanded'));
+          if (!was) card.classList.add('expanded');
+        });
+
+        list.appendChild(card);
+      });
+
+      reInitReveal();
+      CL.fixImages();
+    })();
+  </script>
+</body>
+</html>
