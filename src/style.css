@@ -275,7 +275,7 @@ body::before {
 /* ═══════ PROJECTS ═══════ */
 
 .project-hero { padding: clamp(4rem, 10vw, 8rem) 0 2rem; }
-.project-showcase { background: var(--bg-card); border: 1px solid var(--border); border-radius: 18px; overflow: hidden; }
+.project-showcase { background: var(--bg-card); border: 1px solid var(--border); border-radius: 18px; overflow: hidden; margin-bottom: 4rem; }
 .project-top { display: grid; grid-template-columns: 1fr 1fr; min-height: 380px; }
 .project-info-panel { padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; }
 .project-info-panel h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 900; margin-bottom: 0.4rem; }
