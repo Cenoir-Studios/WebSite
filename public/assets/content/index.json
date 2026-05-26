@@ -1,15 +1,15 @@
 {
   "hero": {
     "tag": "Independent Game Studio",
-    "title": "Dark worlds.<br><em>Bold stories.</em>",
-    "description": "Cenoir Studios crafts immersive, narrative-driven experiences set in atmospheric worlds where every shadow tells a story and every choice carries weight.",
+    "title": "Dark worlds.<br><em>Noir stories.</em>",
+    "description": "Cenoir Studios creates immersive, narrative-driven experiences set in atmospheric world of NoSaints.",
     "cta_primary": { "text": "Explore NoSaints", "href": "projects.html" },
     "cta_secondary": { "text": "Who We Are", "href": "about.html" }
   },
   "featured": {
     "label": "Featured Project",
-    "title": "NoSaints: New Dawn",
-    "description": "A dark and stylish first-person shooter driven by narrative and mystery, set in a world of airships, crumbling cities, and fractured alliances.",
+    "title": "NoSaints: Blue Whale",
+    "description": "A dark and stylish first-person shooter with rich narrative and mystery, set in a world of NoSaints. You play as a bartender of the bar Blue Whale. Cook coctails, gather infor and recipies and go for a hunt!",
     "images": [
       { "src": "./assets/NoSaints/ConceptArt/Concept_5.png", "alt": "NoSaints cityscape" },
       { "src": "./assets/NoSaints/ConceptArt/Concept_1.png", "alt": "NoSaints bridge" }
@@ -18,6 +18,6 @@
   "pillars": [
     { "icon": "🎯", "title": "Narrative First", "text": "Every mechanic, every environment, every encounter serves the story we want to tell." },
     { "icon": "🎨", "title": "Art-Driven", "text": "Stylized visuals that create mood and atmosphere beyond what realism alone can achieve." },
-    { "icon": "⚡", "title": "Built With Purpose", "text": "Feature-oriented architecture and MVP patterns keep our codebase clean and our iteration fast." }
+    { "icon": "⚡", "title": "Fresh combination of mechanics", "text": "Unique combination of the mechanics that will enrich and fill the noir world of NoSaints" }
   ]
 }

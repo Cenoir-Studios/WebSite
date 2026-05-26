@@ -2,7 +2,7 @@
   "hero": {
     "label": "Careers",
     "title": "Build something<br>that matters.",
-    "description": "We're a team of 11 building an atmospheric FPS set in a noir 1930s alternative USA. If you care about craft and want to help shape a world from the ground up — we'd love to hear from you."
+    "description": "We're a team of 10 building an atmospheric FPS set in a noir 1930s alternative USA. If you care about gamedev and want to help shape a world with us — we'd love to hear from you."
   },
   "roles": [
     {
@@ -28,33 +28,16 @@
       "location": "🌍 Remote",
       "type": "🟠 High Priority",
       "about": "Help us find and squash bugs across all game systems. You'll execute test cases, reproduce issues, and ensure stability across platforms.",
-      "tasks": ["Execute test cases across gameplay, UI, and network systems", "Report and reproduce bugs with clear reproduction steps", "Test multiplayer stability and edge cases", "Perform compatibility and performance testing across platforms"]
+      "tasks": ["Execute test cases across the game.", "Report and reproduce bugs with clear reproduction steps", "Test multiplayer stability and edge cases", "Perform compatibility and performance testing across platforms"]
     },
     {
       "title": "Music Composer",
       "dept": "🎵 Audio",
       "location": "🌍 Remote",
-      "type": "📋 Freelance / Contract",
+      "type": "🔴 Critical, Volonteer",
       "about": "Compose the soundtrack for a noir 1930s alternative USA — jazz-inflected, moody, and atmospheric. From the main theme to adaptive in-game loops that respond to combat and exploration.",
       "tasks": ["Compose main theme and menu music", "Create adaptive in-game music (combat, exploration, tension)", "Design faction-specific musical motifs", "Mix and master all music tracks"],
       "tools": ["DAW of choice (Ableton, FL Studio, Reaper)", "FMOD or Wwise for adaptive audio"]
-    },
-    {
-      "title": "Producer",
-      "dept": "📊 Leadership",
-      "location": "🌍 Remote",
-      "type": "📋 Freelance / Contract",
-      "about": "Manage external relations, publishing pipelines, and milestone delivery. You'll handle contracts, coordinate outsourcing, and oversee QA and certification processes.",
-      "tasks": ["Manage relationships with publishers or investors", "Oversee milestone delivery to external stakeholders", "Handle contracts and legal coordination", "Manage outsourcing pipeline", "Coordinate QA and certification processes"]
-    },
-    {
-      "title": "Trailer / Video Editor",
-      "dept": "🎬 Marketing",
-      "location": "🌍 Remote",
-      "type": "📋 Freelance / Contract",
-      "about": "Edit gameplay trailers, devlog videos, and short-form clips for social media. You'll add motion graphics, title cards, and help us tell the NoSaints story to the world.",
-      "tasks": ["Edit gameplay trailers and teasers", "Produce devlog video content", "Create short-form clips for social media (TikTok, Instagram, YouTube Shorts)", "Add motion graphics and title cards"],
-      "tools": ["DaVinci Resolve or Premiere Pro", "After Effects for motion graphics"]
     }
   ]
 }
