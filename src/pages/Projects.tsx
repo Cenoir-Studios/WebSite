@@ -91,14 +91,18 @@ export default function ProjectsPage() {
 
       <section className="section">
         <div className="container container--wide">
-          <Reveal className="project-showcase">
-            <div className="project-top" style={{ display: 'block' }}>
-              <div className="project-info-panel">
-                <h2>{bg.title}</h2>
-                <span className="project-subtitle">{bg.subtitle}</span>
-                <div className="project-status-badge">{bg.status}</div>
-                <p>{bg.description}</p>
-                <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', lineHeight: 1.75 }}>{bg.tech}</p>
+          <Reveal className="project-showcase boardgame-showcase">
+            <div className="boardgame-inner">
+              <div className="boardgame-header">
+                <div>
+                  <h2>{bg.title}</h2>
+                  <span className="project-subtitle">{bg.subtitle}</span>
+                </div>
+                <span className="project-status-badge">{bg.status}</span>
+              </div>
+              <div className="boardgame-body">
+                <p className="boardgame-desc">{bg.description}</p>
+                <p className="boardgame-tech">{bg.tech}</p>
                 <div className="project-tags">
                   {(bg.tags || []).map(t => <span key={t}>{t}</span>)}
                 </div>

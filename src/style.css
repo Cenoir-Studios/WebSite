@@ -264,7 +264,30 @@ body::before {
   display: inline-block; padding: 0.35rem 0.9rem; font-size: 0.72rem; font-weight: 600;
   letter-spacing: 1px; text-transform: uppercase; border-radius: 999px;
   background: var(--accent-glow); color: var(--accent); border: 1px solid rgba(212,137,42,0.2);
-  margin-bottom: 1.25rem;
+}
+
+.boardgame-showcase { position: relative; overflow: hidden; }
+.boardgame-showcase::before {
+  content: ''; position: absolute; top: -30%; right: -10%; width: 50%; height: 160%;
+  background: radial-gradient(ellipse, var(--accent-glow) 0%, transparent 70%);
+  pointer-events: none; opacity: 0.3;
+}
+.boardgame-inner { position: relative; padding: 3rem; }
+.boardgame-header {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;
+}
+.boardgame-header h2 {
+  font-family: var(--font-display); font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 900; margin-bottom: 0.3rem;
+}
+.boardgame-body { max-width: 700px; }
+.boardgame-desc {
+  color: var(--text-secondary); font-size: 0.95rem; line-height: 1.75; margin-bottom: 1.25rem;
+}
+.boardgame-tech {
+  color: var(--text-muted); font-size: 0.88rem; line-height: 1.7;
+  margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);
 }
 
 .carousel-panel { position: relative; overflow: hidden; background: #000; }
