@@ -43,14 +43,9 @@
     "description": "What started as a university diploma project became a vision too big to put down.",
     "milestones": [
       {
-        "year": "2024 — The Spark",
-        "title": "NoSaints: The Diploma Project",
-        "text": "It all began as a diploma project — a first-person shooter prototype built to prove a concept. The scope was small, but the ambition was anything but. The team discovered they cared more about the world they were building than the grade they'd receive."
-      },
-      {
-        "year": "2025 — Expansion",
-        "title": "NoSaints: New Dawn",
-        "text": "The diploma was defended, but the project refused to die. NoSaints evolved into New Dawn — a full narrative arc set in a world of airships, crumbling cities, and fractured power structures. The team grew to 9 members, concept art defined the visual identity, and the MVP architecture was established."
+        "year": "Now — Building",
+        "title": "Active Development",
+        "text": "Today, development continues across programming, art, design, and animation. 11 team members, a shooter-first design philosophy, and a noir 1930s alternative USA aesthetic driving every decision. Cenoir Studios is small by design — every member shapes the game directly."
       },
       {
         "year": "2026 — Identity",
@@ -58,9 +53,14 @@
         "text": "The team formalized as Cenoir Studios. NoSaints expanded further with \"Blue Whale\" — a new chapter exploring the interiors, characters, and narrative threads of the game's underground culture. The Blue Whale bar became a symbol of the project's evolution: from a student exercise to a living, breathing world."
       },
       {
-        "year": "Now — Building",
-        "title": "Active Development",
-        "text": "Today, development continues across programming, art, design, and animation. 11 team members, a shooter-first design philosophy, and a noir 1930s alternative USA aesthetic driving every decision. Cenoir Studios is small by design — every member shapes the game directly."
+        "year": "2025 — Expansion",
+        "title": "NoSaints: New Dawn",
+        "text": "The diploma was defended, but the project refused to die. NoSaints evolved into New Dawn — a full narrative arc set in a world of airships, crumbling cities, and fractured power structures. The team grew to 9 members, concept art defined the visual identity, and the MVP architecture was established."
+      },
+      {
+        "year": "2024 — The Spark",
+        "title": "NoSaints: The Diploma Project",
+        "text": "It all began as a diploma project — a first-person shooter prototype built to prove a concept. The scope was small, but the ambition was anything but. The team discovered they cared more about the world they were building than the grade they'd receive."
       }
     ]
   },
