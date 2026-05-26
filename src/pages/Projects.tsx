@@ -6,6 +6,7 @@ import SmartImg from '../components/SmartImg';
 export default function ProjectsPage() {
   const d = getContent('projects');
   const ns = d.nosains || { gallery: [], downloads: {}, tags: [] } as typeof d.nosains;
+  const bg = d.boardgame || { title: '', subtitle: '', description: '', tech: '', tags: [], status: '' };
   const gallery = ns.gallery || [];
   const downloads = ns.downloads || {} as typeof ns.downloads;
   const [slide, setSlide] = useState(0);
@@ -82,6 +83,25 @@ export default function ProjectsPage() {
                     <SmartImg src={img.src} alt={img.alt} />
                   </div>
                 ))}
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container container--wide">
+          <Reveal className="project-showcase">
+            <div className="project-top" style={{ display: 'block' }}>
+              <div className="project-info-panel">
+                <h2>{bg.title}</h2>
+                <span className="project-subtitle">{bg.subtitle}</span>
+                <div className="project-status-badge">{bg.status}</div>
+                <p>{bg.description}</p>
+                <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', lineHeight: 1.75 }}>{bg.tech}</p>
+                <div className="project-tags">
+                  {(bg.tags || []).map(t => <span key={t}>{t}</span>)}
+                </div>
               </div>
             </div>
           </Reveal>

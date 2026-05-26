@@ -128,9 +128,19 @@ export interface ProjectData {
   gallery: ImageRef[];
 }
 
+export interface BoardGameData {
+  title: string;
+  subtitle: string;
+  description: string;
+  tech: string;
+  tags: string[];
+  status: string;
+}
+
 export interface ProjectsContent {
   hero: { label: string; title: string };
   nosains: ProjectData;
+  boardgame: BoardGameData;
 }
 
 export interface NewsEntry {

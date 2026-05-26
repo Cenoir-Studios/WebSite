@@ -6,8 +6,8 @@ Run after editing any JSON content file:
 """
 import json, os
 
-CONTENT_DIR = os.path.join(os.path.dirname(__file__), 'assets', 'content')
-OUTPUT = os.path.join(os.path.dirname(__file__), 'content-data.js')
+CONTENT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'public', 'assets', 'content')
+OUTPUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'public', 'content-data.js')
 FILES = ['shared', 'index', 'about', 'team', 'projects', 'news', 'careers']
 
 parts = []

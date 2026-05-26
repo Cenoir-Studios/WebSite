@@ -316,6 +316,20 @@ const CONTENT = {
         "alt": "Blue Whale bar design"
       }
     ]
+  },
+  "boardgame": {
+    "title": "NoSaints",
+    "subtitle": "Board Game",
+    "description": "The NoSaints universe expands beyond the screen. NoSaints Board Game brings the world of fractured alliances, noir intrigue, and strategic combat to the tabletop — a standalone experience set in the same 1930s alternative USA.",
+    "tech": "Physical card and board game with faction-based mechanics, narrative scenarios, and asymmetric gameplay. Currently in early design and prototyping phase.",
+    "tags": [
+      "Board Game",
+      "Strategy",
+      "Narrative",
+      "1-4 Players",
+      "Tabletop"
+    ],
+    "status": "In Development"
   }
 },
   news: {
