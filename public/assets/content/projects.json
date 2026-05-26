@@ -66,10 +66,9 @@
         "1-4 Players",
         "Tabletop"
       ],
-      "status": "In Development",
       "gallery": [
         {
-          "src": "./assets/BoardGame/BoardGame_Playtest_1.jpg",
+          "src": "./assets/BoardGame/Playtest_1.jpg",
           "alt": "Playtest_1"
         }
       ]
