@@ -108,6 +108,35 @@ export default function ProjectsPage() {
                 </div>
               </div>
             </div>
+              <div className="carousel-panel">
+                <div className="carousel-track" style={{ transform: `translateX(-${slide * 100}%)` }}>
+                  {gallery.map((img, i) => (
+                    <div key={i} className="carousel-slide">
+                      <SmartImg src={img.src} alt={img.alt} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    </div>
+                  ))}
+                </div>
+                <div className="carousel-controls">
+                  <button className="carousel-btn" onClick={() => setSlide((slide - 1 + len) % len)}>‹</button>
+                  <button className="carousel-btn" onClick={() => setSlide((slide + 1) % len)}>›</button>
+                </div>
+                <div className="carousel-dots">
+                  {gallery.map((_, i) => (
+                    <button key={i} className={`carousel-dot${i === slide ? ' active' : ''}`} onClick={() => setSlide(i)} />
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="gallery-section">
+              <p className="gallery-label">Concept Art Gallery</p>
+              <div className="gallery-grid">
+                {gallery.map((img, i) => (
+                  <div key={i} className={`gallery-thumb${i === slide ? ' active' : ''}`} onClick={() => setLightbox(img.src)}>
+                    <SmartImg src={img.src} alt={img.alt} />
+                  </div>
+                ))}
+              </div>
+            </div>
           </Reveal>
         </div>
       </section>
