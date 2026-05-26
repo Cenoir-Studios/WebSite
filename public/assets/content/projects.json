@@ -63,6 +63,12 @@
       "1-4 Players",
       "Tabletop"
     ],
-    "status": "In Development"
+    "status": "In Development",
+    "gallery": [
+      {
+        "src": "./assets/BoardGame/BoardGame_Playtest_1",
+        "alt": "Golden cityscape with airship"
+      }
+    ]
   }
 }
