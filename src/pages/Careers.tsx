@@ -5,7 +5,9 @@ import type { Role } from '../content/types';
 
 function RoleCard({ role }: { role: Role }) {
   const [open, setOpen] = useState(false);
-  const email = useContent('shared').emails?.careers || '';
+  const shared = useContent('shared');
+  const email = shared.emails?.careers || '';
+  const ui = shared.ui;
 
   return (
     <div className={`role-card${open ? ' expanded' : ''}`}>
@@ -22,13 +24,13 @@ function RoleCard({ role }: { role: Role }) {
       </div>
       <div className="role-body">
         <div className="role-body-inner">
-          <h4>About the Role</h4>
+          <h4>{ui?.about_role || "About the Role"}</h4>
           <p>{role.about}</p>
-          <h4>What You'll Do</h4>
+          <h4>{ui?.what_youll_do || "What You'll Do"}</h4>
           <ul>{role.tasks.map((t, i) => <li key={i}>{t}</li>)}</ul>
           {role.tools && (
             <>
-              <h4>Tools</h4>
+              <h4>{ui?.tools || "Tools"}</h4>
               <ul>{role.tools.map((t, i) => <li key={i}>{t}</li>)}</ul>
             </>
           )}
@@ -45,7 +47,9 @@ function RoleCard({ role }: { role: Role }) {
 
 export default function CareersPage() {
   const d = useContent('careers');
-  const email = useContent('shared').emails?.careers || '';
+  const shared2 = useContent('shared');
+  const email = shared2.emails?.careers || '';
+  const ui2 = shared2.ui;
 
   return (
     <main className="page">
@@ -63,9 +67,9 @@ export default function CareersPage() {
         <div className="container">
           <Reveal>
             <div className="section-header">
-              <span className="section-label">Open Roles</span>
-              <h2 className="section-title">Current opportunities</h2>
-              <p className="section-desc">Click a role to see the full description and apply.</p>
+              <span className="section-label">{ui2?.open_roles || "Open Roles"}</span>
+              <h2 className="section-title">{ui2?.current_opps || "Current opportunities"}</h2>
+              <p className="section-desc">{ui2?.click_role || "Click a role to see the full description and apply."}</p>
             </div>
           </Reveal>
           <div className="open-roles">
@@ -76,9 +80,9 @@ export default function CareersPage() {
             ))}
           </div>
           <Reveal className="contact-block">
-            <h3>Don't see your role?</h3>
-            <p>We're always open to hearing from passionate people.</p>
-            <a href={`mailto:${email}?subject=General Application`} className="btn btn--primary">Get in Touch</a>
+            <h3>{ui2?.no_role_title || "Don't see your role?"}</h3>
+            <p>{ui2?.no_role_text || "We're always open to hearing from passionate people."}</p>
+            <a href={`mailto:${email}?subject=General Application`} className="btn btn--primary">{ui2?.get_in_touch || "Get in Touch"}</a>
           </Reveal>
         </div>
       </section>

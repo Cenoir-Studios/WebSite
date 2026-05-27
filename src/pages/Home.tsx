@@ -1,9 +1,11 @@
 import { useContent } from '../content/ContentContext';
+
 import Reveal from '../components/Reveal';
 import SmartImg from '../components/SmartImg';
 
 export default function HomePage() {
   const d = useContent('index');
+  const ui = useContent('shared').ui;
   const h = d.hero;
   const f = d.featured;
 
@@ -15,8 +17,8 @@ export default function HomePage() {
           <h1 dangerouslySetInnerHTML={{ __html: h.title }} />
           <p className="hero-desc">{h.description}</p>
           <div className="hero-actions">
-            <a href="#/projects" className="btn btn--primary">{h.cta_primary.text}</a>
-            <a href="#/about" className="btn btn--ghost">{h.cta_secondary.text}</a>
+            <a href="#/projects" className="btn btn--primary">{ui?.explore || h.cta_primary.text}</a>
+            <a href="#/about" className="btn btn--ghost">{ui?.who_we_are || h.cta_secondary.text}</a>
           </div>
         </div>
       </section>
@@ -41,7 +43,7 @@ export default function HomePage() {
           </div>
           <Reveal delay={3}>
             <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-              <a href="#/projects" className="btn btn--ghost">View Full Project →</a>
+              <a href="#/projects" className="btn btn--ghost">{ui?.view_project || 'View Full Project →'}</a>
             </div>
           </Reveal>
         </div>

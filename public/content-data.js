@@ -45,6 +45,28 @@ const CONTENT = {
     "news": "News",
     "careers": "Careers",
     "timeline": "Timeline"
+  },
+  "ui": {
+    "download_build": "▶ Download Build",
+    "dev_updates": "Dev Updates →",
+    "apply_now": "Apply Now →",
+    "get_in_touch": "Get in Touch",
+    "view_project": "View Full Project →",
+    "explore": "Explore NoSaints",
+    "who_we_are": "Who We Are",
+    "choose_platform": "Choose your platform.",
+    "download_title": "Download NoSaints",
+    "no_role_title": "Don't see your role?",
+    "no_role_text": "We're always open to hearing from passionate people. Send us your portfolio and tell us what you'd bring to the team.",
+    "open_roles": "Open Roles",
+    "current_opps": "Current opportunities",
+    "click_role": "Click a role to see the full description and apply.",
+    "about_role": "About the Role",
+    "what_youll_do": "What You'll Do",
+    "tools": "Tools",
+    "concept_gallery": "Concept Art Gallery",
+    "fav_games": "Favorite games",
+    "in_development": "In Development"
   }
 },
   index: {

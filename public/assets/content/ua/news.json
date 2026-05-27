@@ -7,38 +7,38 @@
   "entries": [
     {
       "day": "24",
-      "month": "May 2026",
-      "title": "Website Redesign Live",
-      "text": "The Cenoir Studios website has been rebuilt with separate sections for projects, news, and careers. The projects page now features a concept art gallery showcasing environment art from NoSaints: New Dawn.",
-      "tag": "Studio"
+      "month": "Травень 2026",
+      "title": "Оновлення вебсайту",
+      "text": "Вебсайт Cenoir Studios перебудовано з окремими розділами для проєктів, новин та кар'єри. Сторінка проєктів тепер має галерею концепт-арту зі середовищ NoSaints: New Dawn.",
+      "tag": "Студія"
     },
     {
       "day": "15",
-      "month": "May 2026",
-      "title": "NoSaints: Combat System Progress",
-      "text": "The combat feature module is taking shape — states for melee, ranged, and ability-based actions are now running through the priority-based state machine. KINEMATION procedural animation is driving weapon sway and recoil.",
-      "tag": "Development"
+      "month": "Травень 2026",
+      "title": "NoSaints: Прогрес бойової системи",
+      "text": "Модуль бойової системи набуває форми — стани для ближнього бою, дальнього бою та здібностей тепер працюють через пріоритетну систему станів. KINEMATION процедурна анімація керує покачуванням та віддачею зброї.",
+      "tag": "Розробка"
     },
     {
       "day": "02",
-      "month": "Apr 2026",
-      "title": "Movement System Overhaul",
-      "text": "The character movement feature has been refactored into a clean MVP + State Machine architecture. Idle, Move, Sprint, Jump, Crouch, and Slide states are now ScriptableObject-based and fully priority-driven.",
-      "tag": "Development"
+      "month": "Квітень 2026",
+      "title": "Оновлення системи руху",
+      "text": "Система руху персонажа рефакторизована в чисту MVP + State Machine архітектуру. Стани Idle, Move, Sprint, Jump, Crouch та Slide тепер базуються на ScriptableObject.",
+      "tag": "Розробка"
     },
     {
       "day": "10",
-      "month": "Feb 2026",
-      "title": "Environment Concept Art Reveal",
-      "text": "Seven new concept art pieces for NoSaints: New Dawn are now public — featuring the game's signature amber-lit cityscapes, industrial architecture, and the interior of the Blue Whale bar. Art by Andrey Ivasenko.",
-      "tag": "Art"
+      "month": "Лютий 2026",
+      "title": "Розкриття концепт-арту середовищ",
+      "text": "Сім нових робіт концепт-арту для NoSaints: New Dawn — з фірмовими бурштиновими містами, індустріальною архітектурою та інтер'єром бару Blue Whale. Автор: Андрій Іваськенко.",
+      "tag": "Мистецтво"
     },
     {
       "day": "01",
-      "month": "Jan 2026",
-      "title": "Cenoir Studios Founded",
-      "text": "The official founding of Cenoir Studios. A small team, a big vision, and the beginning of NoSaints — our debut project.",
-      "tag": "Studio"
+      "month": "Січень 2026",
+      "title": "Заснування Cenoir Studios",
+      "text": "Офіційне заснування Cenoir Studios. Маленька команда, велике бачення та початок NoSaints — нашого дебютного проєкту.",
+      "tag": "Студія"
     }
   ]
 }

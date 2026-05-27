@@ -4,6 +4,7 @@ import TeamAvatar from '../components/TeamAvatar';
 
 export default function TeamPage() {
   const d = useContent('team');
+  const ui = useContent('shared').ui;
 
   return (
     <main className="page">
@@ -30,7 +31,7 @@ export default function TeamPage() {
                     <TeamAvatar photo={m.photo} initials={m.initials} />
                     <div className="team-name">{m.name}</div>
                     <div className="team-role">{m.role}</div>
-                    <div className="team-fav">Favorite games: {m.games}</div>
+                    <div className="team-fav">{(ui?.fav_games || 'Favorite games')}: {m.games}</div>
                   </div>
                 ))}
               </div>

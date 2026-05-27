@@ -12,12 +12,36 @@ export interface Emails {
   legal: string;
 }
 
+export interface UIStrings {
+  download_build: string;
+  dev_updates: string;
+  apply_now: string;
+  get_in_touch: string;
+  view_project: string;
+  explore: string;
+  who_we_are: string;
+  choose_platform: string;
+  download_title: string;
+  no_role_title: string;
+  no_role_text: string;
+  open_roles: string;
+  current_opps: string;
+  click_role: string;
+  about_role: string;
+  what_youll_do: string;
+  tools: string;
+  concept_gallery: string;
+  fav_games: string;
+  in_development: string;
+}
+
 export interface SharedContent {
   brand: string;
   copyright: string;
   socials: Social[];
   emails: Emails;
   nav: NavLabels;
+  ui: UIStrings;
 }
 
 export interface CTA {

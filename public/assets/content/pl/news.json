@@ -2,42 +2,42 @@
   "hero": {
     "label": "Aktualności",
     "title": "Ze studia.",
-    "description": "Dzienniki developerskie, ogłoszenia i notatki od zespołu Cenoir."
+    "description": "Dzienniki deweloperskie, ogłoszenia i notatki od zespołu Cenoir."
   },
   "entries": [
     {
       "day": "24",
-      "month": "May 2026",
-      "title": "Website Redesign Live",
-      "text": "The Cenoir Studios website has been rebuilt with separate sections for projects, news, and careers. The projects page now features a concept art gallery showcasing environment art from NoSaints: New Dawn.",
+      "month": "Maj 2026",
+      "title": "Redesign strony",
+      "text": "Strona Cenoir Studios została przebudowana z osobnymi sekcjami dla projektów, aktualności i kariery. Strona projektów zawiera teraz galerię concept artów ze środowisk NoSaints: New Dawn.",
       "tag": "Studio"
     },
     {
       "day": "15",
-      "month": "May 2026",
-      "title": "NoSaints: Combat System Progress",
-      "text": "The combat feature module is taking shape — states for melee, ranged, and ability-based actions are now running through the priority-based state machine. KINEMATION procedural animation is driving weapon sway and recoil.",
-      "tag": "Development"
+      "month": "Maj 2026",
+      "title": "NoSaints: Postępy systemu walki",
+      "text": "Moduł systemu walki nabiera kształtu — stany dla walki wręcz, dystansowej i umiejętności działają teraz przez priorytetową maszynę stanów. Animacja proceduralna KINEMATION steruje kołysaniem i odrzutem broni.",
+      "tag": "Rozwój"
     },
     {
       "day": "02",
-      "month": "Apr 2026",
-      "title": "Movement System Overhaul",
-      "text": "The character movement feature has been refactored into a clean MVP + State Machine architecture. Idle, Move, Sprint, Jump, Crouch, and Slide states are now ScriptableObject-based and fully priority-driven.",
-      "tag": "Development"
+      "month": "Kwiecień 2026",
+      "title": "Przebudowa systemu ruchu",
+      "text": "System ruchu postaci został zrefaktoryzowany do czystej architektury MVP + State Machine. Stany Idle, Move, Sprint, Jump, Crouch i Slide są teraz oparte na ScriptableObject.",
+      "tag": "Rozwój"
     },
     {
       "day": "10",
-      "month": "Feb 2026",
-      "title": "Environment Concept Art Reveal",
-      "text": "Seven new concept art pieces for NoSaints: New Dawn are now public — featuring the game's signature amber-lit cityscapes, industrial architecture, and the interior of the Blue Whale bar. Art by Andrey Ivasenko.",
-      "tag": "Art"
+      "month": "Luty 2026",
+      "title": "Ujawnienie concept artów środowisk",
+      "text": "Siedem nowych prac concept art dla NoSaints: New Dawn — z charakterystycznymi bursztynowymi krajobrazami, industrialną architekturą i wnętrzem baru Blue Whale. Autor: Andrey Ivasenko.",
+      "tag": "Sztuka"
     },
     {
       "day": "01",
-      "month": "Jan 2026",
-      "title": "Cenoir Studios Founded",
-      "text": "The official founding of Cenoir Studios. A small team, a big vision, and the beginning of NoSaints — our debut project.",
+      "month": "Styczeń 2026",
+      "title": "Założenie Cenoir Studios",
+      "text": "Oficjalne założenie Cenoir Studios. Mały zespół, wielka wizja i początek NoSaints — naszego debiutanckiego projektu.",
       "tag": "Studio"
     }
   ]

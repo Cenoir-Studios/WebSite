@@ -43,5 +43,27 @@
     "news": "Aktualności",
     "careers": "Kariera",
     "timeline": "Harmonogram"
+  },
+  "ui": {
+    "download_build": "▶ Pobierz build",
+    "dev_updates": "Aktualizacje →",
+    "apply_now": "Aplikuj →",
+    "get_in_touch": "Skontaktuj się",
+    "view_project": "Zobacz projekt →",
+    "explore": "Odkryj NoSaints",
+    "who_we_are": "Kim jesteśmy",
+    "choose_platform": "Wybierz platformę.",
+    "download_title": "Pobierz NoSaints",
+    "no_role_title": "Nie widzisz swojej roli?",
+    "no_role_text": "Zawsze jesteśmy otwarci na utalentowane osoby. Wyślij nam swoje portfolio i powiedz, co możesz wnieść do zespołu.",
+    "open_roles": "Otwarte stanowiska",
+    "current_opps": "Obecne możliwości",
+    "click_role": "Kliknij stanowisko, aby zobaczyć pełny opis i aplikować.",
+    "about_role": "O stanowisku",
+    "what_youll_do": "Co będziesz robić",
+    "tools": "Narzędzia",
+    "concept_gallery": "Galeria concept artów",
+    "fav_games": "Ulubione gry",
+    "in_development": "W produkcji"
   }
 }
