@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "label": "O nas",
+    "title": "Budujemy światy,<br>w których warto się zagubić.",
+    "description": "Cenoir Studios to małe, ale ambitne niezależne studio gier. Tworzymy atmosferyczne doświadczenia z silną identyfikacją wizualną i wspaniałym gameplayem!"
+  },
+  "cards": [
+    {
+      "title": "Nasza wizja",
+      "paragraphs": [
+        "Wierzymy, że gry to najpotężniejsze medium opowiadania historii naszego pokolenia.",
+        "Każdy projekt Cenoir zaczyna się od pytania: jakie doświadczenie chcemy, by gracz zapamiętał?"
+      ]
+    },
+    {
+      "title": "Jak pracujemy",
+      "paragraphs": [
+        "Jesteśmy przede wszystkim zespołem przyjaciół, połączonych jednym celem — stworzyć najlepsze doświadczenie.",
+        "Mimo młodości zespołu, niektórzy z nas mają doświadczenie AAA i lata pracy komercyjnej."
+      ]
+    }
+  ],
+  "values": [
+    {
+      "icon": "◆",
+      "title": "Zabawa przede wszystkim",
+      "text": "Nasz świat może wyglądać ponuro, ale wierzymy, że zabawa jest najważniejszą częścią gry."
+    },
+    {
+      "icon": "◈",
+      "title": "Atmosfera",
+      "text": "Nastrój i ton kierują każdą decyzją projektową."
+    },
+    {
+      "icon": "◇",
+      "title": "Historia ma znaczenie",
+      "text": "Nasza historia jest bogata, a narracja wspiera ją przez całą grę."
+    }
+  ],
+  "journey": {
+    "label": "Nasza droga",
+    "title": "Od projektu dyplomowego do studia.",
+    "description": "To, co zaczęło się jako projekt dyplomowy, stało się nową wizją.",
+    "milestones": [
+      {
+        "year": "Teraz — Budujemy",
+        "title": "Aktywny rozwój",
+        "text": "Dziś rozwój trwa w programowaniu, sztuce, designie i animacji."
+      },
+      {
+        "year": "2026 — Tożsamość",
+        "title": "Cenoir Studios & NoSaints: Blue Whale",
+        "text": "Zespół sformalizował się jako Cenoir Studios. NoSaints rozszerzył się o \"Blue Whale\"."
+      },
+      {
+        "year": "2026 — Ekspansja",
+        "title": "NoSaints: New Dawn",
+        "text": "Dyplom obroniony z wyróżnieniem jako najlepszy projekt roku. 16 z 16 jurorów głosowało za NoSaints."
+      },
+      {
+        "year": "2025 — Gra planszowa",
+        "title": "NoSaints: Gra planszowa",
+        "text": "Otrzymaliśmy zadanie stworzenia gry planszowej i pomyślnie przenieśliśmy doświadczenie FPS na stół."
+      },
+      {
+        "year": "2024 — Iskra",
+        "title": "NoSaints: Projekt dyplomowy",
+        "text": "Wszystko zaczęło się jako projekt dyplomowy — prototyp wieloosobowego FPS."
+      }
+    ]
+  },
+  "trailers": {
+    "label": "Gdzie to się zaczęło",
+    "title": "Oryginalne zwiastuny NoSaints.",
+    "description": "Z projektu dyplomowego — pierwsze dwa zwiastuny początkowej koncepcji.",
+    "videos": [
+      {
+        "id": "boSoNMq-B-Q",
+        "caption": "NoSaints — First Trailer"
+      },
+      {
+        "id": "WZKBSIEfApQ",
+        "caption": "NoSaints — Final Trailer"
+      }
+    ]
+  }
+}

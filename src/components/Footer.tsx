@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Studio</h4>
             <a href="#/">Home</a><a href="#/about">About</a><a href="#/team">Team</a>
-            <a href="#/projects">Projects</a><a href="#/news">News</a><a href="#/careers">Careers</a>
+            <a href="#/projects">Projects</a><a href="#/news">News</a><a href="#/careers">Careers</a><a href="#/timeline">Timeline</a>
           </div>
           <div className="footer-col">
             <h4>Contact</h4>

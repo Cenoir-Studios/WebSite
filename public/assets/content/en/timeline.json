@@ -1,0 +1,57 @@
+{
+  "hero": {
+    "label": "Timeline",
+    "title": "Our roadmap.",
+    "description": "Key milestones and goals on our path from prototype to release."
+  },
+  "milestones": [
+    {
+      "date": "2024",
+      "title": "NoSaints Diploma Project",
+      "description": "Multiplayer FPS prototype defended as diploma project at PJAIT. Voted best diploma project of the year by all 16 jurors.",
+      "status": "completed"
+    },
+    {
+      "date": "2025",
+      "title": "NoSaints Board Game",
+      "description": "Tabletop adaptation of the NoSaints universe. Faction-based strategy with narrative scenarios. Successfully playtested.",
+      "status": "completed"
+    },
+    {
+      "date": "Early 2026",
+      "title": "Studio Formation",
+      "description": "Cenoir Studios officially founded. Team of 10 formalized. Pivot from multiplayer to single-player narrative FPS — NoSaints: Blue Whale.",
+      "status": "completed"
+    },
+    {
+      "date": "Q3 2026",
+      "title": "Vertical Slice",
+      "description": "Complete playable slice of NoSaints: Blue Whale — full gameplay loop with bartending, investigation, and combat sequences.",
+      "status": "in-progress"
+    },
+    {
+      "date": "Q4 2026",
+      "title": "Alpha Testing",
+      "description": "Closed alpha with core gameplay systems, first chapter narrative, and key environment art. Internal QA and select external playtesters.",
+      "status": "upcoming"
+    },
+    {
+      "date": "2027",
+      "title": "Digital Dragons",
+      "description": "Showcase NoSaints: Blue Whale at Digital Dragons conference in Kraków. Demo build, trailer, and press presence.",
+      "status": "planned"
+    },
+    {
+      "date": "2027",
+      "title": "Beta & Publisher Outreach",
+      "description": "Extended beta testing. Active outreach to publishers and investors. Marketing campaign and community building.",
+      "status": "planned"
+    },
+    {
+      "date": "2028",
+      "title": "Release",
+      "description": "Full release of NoSaints: Blue Whale on PC. Board game physical production and distribution.",
+      "status": "planned"
+    }
+  ]
+}

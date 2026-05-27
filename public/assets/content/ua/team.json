@@ -1,0 +1,97 @@
+{
+  "label": "Команда",
+  "title": "Познайомтесь з розробниками Cenoir.",
+  "description": "10 учасників. Кожен робить свій внесок безпосередньо.",
+  "departments": [
+    {
+      "name": "Leadership & Engineering",
+      "members": [
+        {
+          "name": "Daniil Denysov",
+          "photo": "DaniilDenysov",
+          "initials": "DD",
+          "role": "Founder, Lead Programmer & Project Manager",
+          "games": "Clair Obscur: Expedition 33, Fallout 4, Tom Clancy's Rainbow Six Siege, S.T.A.L.K.E.R. 2"
+        },
+        {
+          "name": "Oleksandr Pryimak",
+          "photo": "OleksandrPryimak",
+          "initials": "OP",
+          "role": "Programmer, Game Designer & Community Manager",
+          "games": "Batman: Arkham Series, Uncharted 4, The Witcher 3, God of War: Ragnarok, Cyberpunk 2077"
+        }
+      ]
+    },
+    {
+      "name": "Game Design",
+      "members": [
+        {
+          "name": "Iliya Ratkevich",
+          "photo": "IliyaRatkevich",
+          "initials": "IR",
+          "role": "Lead Game Designer",
+          "games": "Warframe, Team Fortress 2, Library of Ruina, Ghostrunner, Ultrakill"
+        },
+        {
+          "name": "Mykhailo Papunitskyi",
+          "photo": "MykhailoPapunitskyi",
+          "initials": "MP",
+          "role": "Lead Level Designer & Game Designer",
+          "games": "Warcraft III, Warhammer 40k, World of Warcraft"
+        },
+        {
+          "name": "Nikita Murashko",
+          "photo": "NikitaMurashko",
+          "initials": "NM",
+          "role": "Narrative Designer",
+          "games": "Picayune Dreams, Helldivers 2, Deep Rock Galactic"
+        }
+      ]
+    },
+    {
+      "name": "Art",
+      "members": [
+        {
+          "name": "Andrey Ivasenko",
+          "photo": "AndreyIvasenko",
+          "initials": "AI",
+          "role": "Art Director & Lead Concept Artist",
+          "games": "Dark souls 3, Dishonored (1/2), Sekiro: Shadows Die Twice, Team Fortress 2, Jusant"
+        },
+        {
+          "name": "Bohdan Poltoratskyi",
+          "photo": "BohdanPoltoratskyi",
+          "initials": "BP",
+          "role": "Lead 3D Artist & Weapon Artist",
+          "games": "PUBG: Battlegrounds, Counter-Strike 2, Risk of Rain 2, Red Alert 3"
+        },
+        {
+          "name": "Karina Afonina",
+          "photo": "KarinaAfonina",
+          "initials": "KA",
+          "role": "3D Artist",
+          "games": " Detroit: Become Human, Frostpunk, Valorant"
+        },
+        {
+          "name": "Lipski Yaroslav",
+          "photo": "LipskiYaroslav",
+          "initials": "LY",
+          "role": "Intern 3D Artist",
+          "games": "Dishonored, Read Dead Redemption 2, Death Stranding,  Baldur's Gate 3, Subnautica"
+        }
+      ]
+    },
+    {
+      "name": "Animation",
+      "members": [
+        {
+          "name": "Iryna Pavlova",
+          "photo": "IrynaPavlova",
+          "initials": "IP",
+          "role": "Lead 3D Animator, Character Artist & Technical Artist",
+          "games": "Backrooms, Cyberpunk 2077, No Man's Sky"
+        }
+      ]
+    }
+  ]
+}

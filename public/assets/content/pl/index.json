@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "tag": "Niezależne studio gier",
+    "title": "Mroczne światy.<br><em>Noir historie.</em>",
+    "description": "Cenoir Studios tworzy wciągające, narracyjne doświadczenia w atmosferycznym świecie NoSaints.",
+    "cta_primary": {
+      "text": "Odkryj NoSaints",
+      "href": "projects.html"
+    },
+    "cta_secondary": {
+      "text": "Kim jesteśmy",
+      "href": "about.html"
+    }
+  },
+  "featured": {
+    "label": "Główny projekt",
+    "title": "NoSaints: Blue Whale",
+    "description": "Mroczny i stylowy FPS z bogatą narracją i tajemnicami w świecie NoSaints. Grasz jako barman baru Blue Whale. Przygotowuj koktajle, zbieraj informacje i przepisy, i wyruszaj na łowy!",
+    "images": [
+      {
+        "src": "./assets/NoSaints/ConceptArt/Concept_5.png",
+        "alt": "NoSaints cityscape"
+      },
+      {
+        "src": "./assets/NoSaints/ConceptArt/Concept_1.png",
+        "alt": "NoSaints bridge"
+      }
+    ]
+  },
+  "pillars": [
+    {
+      "icon": "🎯",
+      "title": "Narracja przede wszystkim",
+      "text": "Każda mechanika, każde środowisko, każde spotkanie służy historii, którą chcemy opowiedzieć."
+    },
+    {
+      "icon": "🎨",
+      "title": "Sztuka",
+      "text": "Stylizowana grafika tworząca nastrój i atmosferę."
+    },
+    {
+      "icon": "⚡",
+      "title": "Unikalne połączenie mechanik",
+      "text": "Unikalna kombinacja mechanik, która wzbogaci noir świat NoSaints."
+    }
+  ]
+}

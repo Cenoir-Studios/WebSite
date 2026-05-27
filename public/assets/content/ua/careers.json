@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "label": "Кар'єра",
+    "title": "Створюй те,<br>що має значення.",
+    "description": "Ми — команда з 10 людей, які створюють атмосферний FPS у стилі нуар 1930-х. Якщо вам цікавий геймдев і ви хочете формувати світ разом з нами — ми будемо раді вас почути."
+  },
+  "roles": [
+    {
+      "title": "Sound Designer",
+      "dept": "🔊 Audio",
+      "location": "🌍 Remote",
+      "type": "🔴 Critical",
+      "about": "NoSaints needs a voice — weapon SFX, atmospheric ambience, UI audio feedback, and spatial sound for our noir 1930s world. This is a critical gap that directly blocks development progress.",
+      "tasks": [
+        "Design weapon firing and reload sound effects",
+        "Create ambient soundscapes (1930s city streets, interiors, rain)",
+        "Design UI audio feedback (menu clicks, notifications, HUD cues)",
+        "Implement spatial audio for multiplayer environments",
+        "Create impact and destruction sound effects"
+      ],
+      "tools": [
+        "FMOD or Wwise for integration",
+        "Audacity, Reaper, or equivalent DAW",
+        "Unity audio pipeline"
+      ]
+    },
+    {
+      "title": "QA Lead",
+      "dept": "🧪 Quality Assurance",
+      "location": "🌍 Remote",
+      "type": "🟠 High Priority",
+      "about": "Lead the quality assurance process for NoSaints. You'll design test plans, triage bugs, coordinate playtest sessions, and determine build stability for release milestones.",
+      "tasks": [
+        "Design test plans for each development milestone",
+        "Triage and prioritize bug reports",
+        "Coordinate playtest sessions with the team",
+        "Verify bug fixes and run regression testing",
+        "Assess build stability and release readiness",
+        "Track quality metrics across builds"
+      ]
+    },
+    {
+      "title": "QA Testers",
+      "dept": "🧪 Quality Assurance",
+      "location": "🌍 Remote",
+      "type": "🟠 High Priority",
+      "about": "Help us find and squash bugs across all game systems. You'll execute test cases, reproduce issues, and ensure stability across platforms.",
+      "tasks": [
+        "Execute test cases across the game.",
+        "Report and reproduce bugs with clear reproduction steps",
+        "Test multiplayer stability and edge cases",
+        "Perform compatibility and performance testing across platforms"
+      ]
+    },
+    {
+      "title": "Music Composer",
+      "dept": "🎵 Audio",
+      "location": "🌍 Remote",
+      "type": "🔴 Critical, Volonteer",
+      "about": "Compose the soundtrack for a noir 1930s alternative USA — jazz-inflected, moody, and atmospheric. From the main theme to adaptive in-game loops that respond to combat and exploration.",
+      "tasks": [
+        "Compose main theme and menu music",
+        "Create adaptive in-game music (combat, exploration, tension)",
+        "Design faction-specific musical motifs",
+        "Mix and master all music tracks"
+      ],
+      "tools": [
+        "DAW of choice (Ableton, FL Studio, Reaper)",
+        "FMOD or Wwise for adaptive audio"
+      ]
+    }
+  ]
+}

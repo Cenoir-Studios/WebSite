@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """
-Rebuilds content-data.js from assets/content/*.json files.
+Rebuilds content-data.js from assets/content/en/*.json files (EN fallback).
 Run after editing any JSON content file:
     python3 build-content.py
 """
 import json, os
 
-CONTENT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'public', 'assets', 'content')
-OUTPUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'public', 'content-data.js')
-FILES = ['shared', 'index', 'about', 'team', 'projects', 'news', 'careers']
+BASE = os.path.dirname(os.path.abspath(__file__))
+CONTENT_DIR = os.path.join(BASE, 'public', 'assets', 'content', 'en')
+OUTPUT = os.path.join(BASE, 'public', 'content-data.js')
+FILES = ['shared', 'index', 'about', 'team', 'projects', 'news', 'careers', 'timeline']
 
 parts = []
 for name in FILES:
@@ -17,7 +18,7 @@ for name in FILES:
         data = json.load(f)
     parts.append(f'  {name}: {json.dumps(data, indent=2, ensure_ascii=False)}')
 
-js = '/* Auto-generated from assets/content/*.json — do not edit directly */\n'
+js = '/* Auto-generated from assets/content/en/*.json — fallback data */\n'
 js += 'const CONTENT = {\n' + ',\n'.join(parts) + '\n};\n'
 
 with open(OUTPUT, 'w', encoding='utf-8') as f:

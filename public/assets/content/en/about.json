@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "label": "About Us",
+    "title": "We build worlds<br>worth getting lost in.",
+    "description": "Cenoir Studios is a small, yet ambitious independent game development studio. We create atmospheric gameplay experiences with strong visual identity, memorable art direction, stunning stories and amazing gameplay!"
+  },
+  "cards": [
+    {
+      "title": "Our Vision",
+      "paragraphs": [
+        "We believe games are the most powerful storytelling media of our generation. Games give immersion — the feeling of being inside a world and shaping it with your choices.",
+        "Every project at Cenoir starts with a question: what kind of experience do we want the player to carry with them? The mechanics, the visuals, the audio, everything."
+      ]
+    },
+    {
+      "title": "How We Work",
+      "paragraphs": [
+        "We are team of friends in the first place, bound by one idea and purpose - bring to the table the best immersive experience we can possibly achieve.",
+        "Despite the fact of how young our team is, some of us have AAA experience and years of commercial experience behind their backs. Having such experience allow us to provide the best quality possible to the player."
+      ]
+    }
+  ],
+  "values": [
+    {
+      "icon": "◆",
+      "title": "Fun first",
+      "text": "Our world might be looking grim, but we believe fun is the most important part of any game."
+    },
+    {
+      "icon": "◈",
+      "title": "Atmosphere",
+      "text": "Mood and tone drive every design decision, from level layout to color grading."
+    },
+    {
+      "icon": "◇",
+      "title": "Story matters",
+      "text": "Our story is rich and narrative supports it throughtout the game."
+    }
+  ],
+  "journey": {
+    "label": "Our Journey",
+    "title": "From diploma project to studio.",
+    "description": "What started as a university diploma project became a new vision.",
+    "milestones": [
+      {
+        "year": "Now — Building",
+        "title": "Active Development",
+        "text": "Today, development continues across programming, art, design, and animation. Fun-first design philosophy, and a noir 1930s alternative USA aesthetic driving every decision. Cenoir Studios is small by design — every member shapes the game directly."
+      },
+      {
+        "year": "2026 — Identity",
+        "title": "Cenoir Studios & NoSaints: Blue Whale",
+        "text": "The team formalized as Cenoir Studios. NoSaints expanded further with \"Blue Whale\" — a starting chapter which will introduce the player to the world of NoSaints."
+      },
+      {
+        "year": "2026 — Expansion",
+        "title": "NoSaints: New Dawn",
+        "text": "The diploma was defended with distinction as the best diploma project of the year. 16 out 16 jouries voted for NoSaints, players felt immersed by the settomg and praised combat and movement feel of the NoSaints. It was first multiplayer diploma project in the history of the PJAIT. The team loved the project and did not want to let it die as a forgotten diploma project."
+      },
+      {
+        "year": "2025 — Board Game Version",
+        "title": "NoSaints: The Board Game",
+        "text": "We have been tasked with creating a board game related to our project, it was challenging to transfer fps multiplayer experience to the board, but we successfully achieved this. More than that, it was proven to be fun, so we decided to continue it's development as well."
+      },
+      {
+        "year": "2024 — The Spark",
+        "title": "NoSaints: The Diploma Project",
+        "text": "It all began as a diploma project — an online multiplayer first-person shooter prototype built to prove a concept. The scope was small with an ambition. This project became for us something more than just a diploma project."
+      }
+    ]
+  },
+  "trailers": {
+    "label": "Where It Started",
+    "title": "The original NoSaints trailers.",
+    "description": "From the diploma project that started it all — the first two trailers of the initial concept.",
+    "videos": [
+      {
+        "id": "boSoNMq-B-Q",
+        "caption": "NoSaints — First Trailer"
+      },
+      {
+        "id": "WZKBSIEfApQ",
+        "caption": "NoSaints — Final Trailer"
+      }
+    ]
+  }
+}

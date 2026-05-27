@@ -1,0 +1,57 @@
+{
+  "hero": {
+    "label": "Хронологія",
+    "title": "Наш план.",
+    "description": "Ключові етапи на шляху від прототипу до релізу."
+  },
+  "milestones": [
+    {
+      "date": "2024",
+      "title": "Дипломний проєкт NoSaints",
+      "description": "Прототип мультиплеєрного FPS захищений як дипломний проєкт у PJAIT. Визнаний найкращим проєктом року.",
+      "status": "completed"
+    },
+    {
+      "date": "2025",
+      "title": "Настільна гра NoSaints",
+      "description": "Настільна адаптація всесвіту NoSaints. Фракційна стратегія з наративними сценаріями.",
+      "status": "completed"
+    },
+    {
+      "date": "Початок 2026",
+      "title": "Заснування студії",
+      "description": "Cenoir Studios офіційно засновано. Команда з 10 осіб. Перехід до одиночного наративного FPS — NoSaints: Blue Whale.",
+      "status": "completed"
+    },
+    {
+      "date": "Q3 2026",
+      "title": "Вертикальний зріз",
+      "description": "Повна ігрова секція NoSaints: Blue Whale — повний геймплейний цикл.",
+      "status": "in-progress"
+    },
+    {
+      "date": "Q4 2026",
+      "title": "Альфа-тестування",
+      "description": "Закрите альфа-тестування з основними ігровими системами та першим розділом наративу.",
+      "status": "upcoming"
+    },
+    {
+      "date": "2027",
+      "title": "Digital Dragons",
+      "description": "Презентація NoSaints: Blue Whale на конференції Digital Dragons у Кракові.",
+      "status": "planned"
+    },
+    {
+      "date": "2027",
+      "title": "Бета та видавці",
+      "description": "Розширене бета-тестування. Пошук видавців та інвесторів.",
+      "status": "planned"
+    },
+    {
+      "date": "2028",
+      "title": "Реліз",
+      "description": "Повний реліз NoSaints: Blue Whale на PC.",
+      "status": "planned"
+    }
+  ]
+}

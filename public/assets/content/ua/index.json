@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "tag": "Незалежна ігрова студія",
+    "title": "Темні світи.<br><em>Нуарні історії.</em>",
+    "description": "Cenoir Studios створює захопливі, наративні ігрові досвіди у атмосферному світі NoSaints.",
+    "cta_primary": {
+      "text": "Дослідити NoSaints",
+      "href": "projects.html"
+    },
+    "cta_secondary": {
+      "text": "Хто ми",
+      "href": "about.html"
+    }
+  },
+  "featured": {
+    "label": "Головний проєкт",
+    "title": "NoSaints: Blue Whale",
+    "description": "Темний та стильний шутер від першої особи з багатим наративом та таємницями у світі NoSaints. Ви граєте за бармена бару Blue Whale. Готуйте коктейлі, збирайте інформацію та рецепти і вирушайте на полювання!",
+    "images": [
+      {
+        "src": "./assets/NoSaints/ConceptArt/Concept_5.png",
+        "alt": "NoSaints cityscape"
+      },
+      {
+        "src": "./assets/NoSaints/ConceptArt/Concept_1.png",
+        "alt": "NoSaints bridge"
+      }
+    ]
+  },
+  "pillars": [
+    {
+      "icon": "🎯",
+      "title": "Наратив перш за все",
+      "text": "Кожна механіка, кожне середовище, кожна зустріч служить історії, яку ми хочемо розповісти."
+    },
+    {
+      "icon": "🎨",
+      "title": "Мистецтво",
+      "text": "Стилізована візуалізація, яка створює настрій та атмосферу."
+    },
+    {
+      "icon": "⚡",
+      "title": "Унікальне поєднання механік",
+      "text": "Унікальна комбінація механік, що збагатить та наповнить нуарний світ NoSaints."
+    }
+  ]
+}

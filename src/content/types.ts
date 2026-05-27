@@ -17,6 +17,7 @@ export interface SharedContent {
   copyright: string;
   socials: Social[];
   emails: Emails;
+  nav: NavLabels;
 }
 
 export interface CTA {
@@ -179,4 +180,27 @@ export interface AllContent {
   projects: ProjectsContent;
   news: NewsContent;
   careers: CareersContent;
+  timeline: TimelineContent;
+}
+
+export interface NavLabels {
+  home: string;
+  about: string;
+  team: string;
+  projects: string;
+  news: string;
+  careers: string;
+  timeline: string;
+}
+
+export interface TimelineMilestone {
+  date: string;
+  title: string;
+  description: string;
+  status: 'completed' | 'in-progress' | 'upcoming' | 'planned';
+}
+
+export interface TimelineContent {
+  hero: { label: string; title: string; description: string };
+  milestones: TimelineMilestone[];
 }

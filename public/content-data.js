@@ -1,4 +1,4 @@
-/* Auto-generated from assets/content/*.json — do not edit directly */
+/* Auto-generated from assets/content/en/*.json — fallback data */
 const CONTENT = {
   shared: {
   "brand": "Cenoir Studios",
@@ -36,13 +36,22 @@ const CONTENT = {
     "support": "support@cenoirstudios.com",
     "social": "social@cenoirstudios.com",
     "legal": "legal@cenoirstudios.com"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "team": "Team",
+    "projects": "Projects",
+    "news": "News",
+    "careers": "Careers",
+    "timeline": "Timeline"
   }
 },
   index: {
   "hero": {
     "tag": "Independent Game Studio",
-    "title": "Dark worlds.<br><em>Bold stories.</em>",
-    "description": "Cenoir Studios crafts immersive, narrative-driven experiences set in atmospheric worlds where every shadow tells a story and every choice carries weight.",
+    "title": "Dark worlds.<br><em>Noir stories.</em>",
+    "description": "Cenoir Studios creates immersive, narrative-driven experiences set in atmospheric world of NoSaints.",
     "cta_primary": {
       "text": "Explore NoSaints",
       "href": "projects.html"
@@ -54,8 +63,8 @@ const CONTENT = {
   },
   "featured": {
     "label": "Featured Project",
-    "title": "NoSaints: New Dawn",
-    "description": "A dark and stylish first-person shooter driven by narrative and mystery, set in a world of airships, crumbling cities, and fractured alliances.",
+    "title": "NoSaints: Blue Whale",
+    "description": "A dark and stylish first-person shooter with rich narrative and mystery, set in a world of NoSaints. You play as a bartender of the bar Blue Whale. Cook coctails, gather infor and recipies and go for a hunt!",
     "images": [
       {
         "src": "./assets/NoSaints/ConceptArt/Concept_5.png",
@@ -80,8 +89,8 @@ const CONTENT = {
     },
     {
       "icon": "⚡",
-      "title": "Built With Purpose",
-      "text": "Feature-oriented architecture and MVP patterns keep our codebase clean and our iteration fast."
+      "title": "Fresh combination of mechanics",
+      "text": "Unique combination of the mechanics that will enrich and fill the noir world of NoSaints"
     }
   ]
 },
@@ -89,88 +98,93 @@ const CONTENT = {
   "hero": {
     "label": "About Us",
     "title": "We build worlds<br>worth getting lost in.",
-    "description": "Cenoir Studios is a small and ambitious independent game development studio. We create atmospheric gameplay experiences with strong visual identity, memorable art direction, and stories that linger long after the screen goes dark."
+    "description": "Cenoir Studios is a small, yet ambitious independent game development studio. We create atmospheric gameplay experiences with strong visual identity, memorable art direction, stunning stories and amazing gameplay!"
   },
   "cards": [
     {
       "title": "Our Vision",
       "paragraphs": [
-        "We believe games are the most powerful storytelling medium of our generation. Not because of spectacle, but because of immersion — the feeling of being inside a world and shaping it with your choices.",
-        "Every project at Cenoir starts with a question: what kind of experience do we want the player to carry with them? The mechanics, the visuals, the audio — they all exist in service of that experience."
+        "We believe games are the most powerful storytelling media of our generation. Games give immersion — the feeling of being inside a world and shaping it with your choices.",
+        "Every project at Cenoir starts with a question: what kind of experience do we want the player to carry with them? The mechanics, the visuals, the audio, everything."
       ]
     },
     {
       "title": "How We Work",
       "paragraphs": [
-        "Our codebase follows a feature-oriented hybrid architecture with MVP + State Machine patterns, powered by Zenject for dependency injection. Every feature — movement, combat, HUD — lives in its own self-contained module.",
-        "We run agile sprints coordinated through Trello and Discord, with daily stand-ups and regular retrospectives keeping the team aligned and moving fast."
+        "We are team of friends in the first place, bound by one idea and purpose - bring to the table the best immersive experience we can possibly achieve.",
+        "Despite the fact of how young our team is, some of us have AAA experience and years of commercial experience behind their backs. Having such experience allow us to provide the best quality possible to the player."
       ]
     }
   ],
   "values": [
     {
       "icon": "◆",
-      "title": "Atmosphere First",
-      "text": "Mood and tone drive every design decision, from level layout to color grading."
+      "title": "Fun first",
+      "text": "Our world might be looking grim, but we believe fun is the most important part of any game."
     },
     {
       "icon": "◈",
-      "title": "Clean Architecture",
-      "text": "Feature-oriented structure with strict namespace conventions and assembly boundaries."
+      "title": "Atmosphere",
+      "text": "Mood and tone drive every design decision, from level layout to color grading."
     },
     {
       "icon": "◇",
-      "title": "Story That Matters",
-      "text": "Narrative is not a wrapper — it's the reason the game exists."
+      "title": "Story matters",
+      "text": "Our story is rich and narrative supports it throughtout the game."
     }
   ],
   "journey": {
     "label": "Our Journey",
     "title": "From diploma project to studio.",
-    "description": "What started as a university diploma project became a vision too big to put down.",
+    "description": "What started as a university diploma project became a new vision.",
     "milestones": [
       {
-        "year": "2024 — The Spark",
-        "title": "NoSaints: The Diploma Project",
-        "text": "It all began as a diploma project — a first-person shooter prototype built to prove a concept. The scope was small, but the ambition was anything but. The team discovered they cared more about the world they were building than the grade they'd receive."
-      },
-      {
-        "year": "2025 — Expansion",
-        "title": "NoSaints: New Dawn",
-        "text": "The diploma was defended, but the project refused to die. NoSaints evolved into New Dawn — a full narrative arc set in a world of airships, crumbling cities, and fractured power structures. The team grew to 9 members, concept art defined the visual identity, and the MVP architecture was established."
+        "year": "Now — Building",
+        "title": "Active Development",
+        "text": "Today, development continues across programming, art, design, and animation. Fun-first design philosophy, and a noir 1930s alternative USA aesthetic driving every decision. Cenoir Studios is small by design — every member shapes the game directly."
       },
       {
         "year": "2026 — Identity",
         "title": "Cenoir Studios & NoSaints: Blue Whale",
-        "text": "The team formalized as Cenoir Studios. NoSaints expanded further with \"Blue Whale\" — a new chapter exploring the interiors, characters, and narrative threads of the game's underground culture. The Blue Whale bar became a symbol of the project's evolution: from a student exercise to a living, breathing world."
+        "text": "The team formalized as Cenoir Studios. NoSaints expanded further with \"Blue Whale\" — a starting chapter which will introduce the player to the world of NoSaints."
       },
       {
-        "year": "Now — Building",
-        "title": "Active Development",
-        "text": "Today, development continues across programming, art, design, and animation. 11 team members, a shooter-first design philosophy, and a noir 1930s alternative USA aesthetic driving every decision. Cenoir Studios is small by design — every member shapes the game directly."
+        "year": "2026 — Expansion",
+        "title": "NoSaints: New Dawn",
+        "text": "The diploma was defended with distinction as the best diploma project of the year. 16 out 16 jouries voted for NoSaints, players felt immersed by the settomg and praised combat and movement feel of the NoSaints. It was first multiplayer diploma project in the history of the PJAIT. The team loved the project and did not want to let it die as a forgotten diploma project."
+      },
+      {
+        "year": "2025 — Board Game Version",
+        "title": "NoSaints: The Board Game",
+        "text": "We have been tasked with creating a board game related to our project, it was challenging to transfer fps multiplayer experience to the board, but we successfully achieved this. More than that, it was proven to be fun, so we decided to continue it's development as well."
+      },
+      {
+        "year": "2024 — The Spark",
+        "title": "NoSaints: The Diploma Project",
+        "text": "It all began as a diploma project — an online multiplayer first-person shooter prototype built to prove a concept. The scope was small with an ambition. This project became for us something more than just a diploma project."
       }
     ]
   },
   "trailers": {
     "label": "Where It Started",
     "title": "The original NoSaints trailers.",
-    "description": "From the diploma project that started it all — the first two trailers that captured the vision before it had a name.",
+    "description": "From the diploma project that started it all — the first two trailers of the initial concept.",
     "videos": [
       {
         "id": "boSoNMq-B-Q",
-        "caption": "NoSaints — Original Trailer"
+        "caption": "NoSaints — First Trailer"
       },
       {
         "id": "WZKBSIEfApQ",
-        "caption": "NoSaints — Gameplay Trailer"
+        "caption": "NoSaints — Final Trailer"
       }
     ]
   }
 },
   team: {
   "label": "The Team",
-  "title": "Meet the people behind Cenoir.",
-  "description": "11 members. 9 core, 2 newest additions. Everyone wears multiple hats and shapes the game directly.",
+  "title": "Meet the Cenoir Devs.",
+  "description": "10 members. Everyone wears multiple hats and shapes the game directly.",
   "departments": [
     {
       "name": "Leadership & Engineering",
@@ -180,14 +194,14 @@ const CONTENT = {
           "photo": "DaniilDenysov",
           "initials": "DD",
           "role": "Founder, Lead Programmer & Project Manager",
-          "games": "Half-Life 2, Deus Ex, DOOM Eternal, System Shock"
+          "games": "Clair Obscur: Expedition 33, Fallout 4, Tom Clancy's Rainbow Six Siege, S.T.A.L.K.E.R. 2"
         },
         {
           "name": "Oleksandr Pryimak",
           "photo": "OleksandrPryimak",
           "initials": "OP",
           "role": "Programmer, Game Designer & Community Manager",
-          "games": "Counter-Strike 2, Disco Elysium, Cyberpunk 2077"
+          "games": "Batman: Arkham Series, Uncharted 4, The Witcher 3, God of War: Ragnarok, Cyberpunk 2077"
         }
       ]
     },
@@ -199,7 +213,7 @@ const CONTENT = {
           "photo": "IliyaRatkevich",
           "initials": "IR",
           "role": "Lead Game Designer",
-          "games": "Escape from Tarkov, Rainbow Six Siege, Titanfall 2"
+          "games": "Warframe, Team Fortress 2, Library of Ruina, Ghostrunner, Ultrakill"
         },
         {
           "name": "Mykhailo Papunitskyi",
@@ -213,7 +227,7 @@ const CONTENT = {
           "photo": "NikitaMurashko",
           "initials": "NM",
           "role": "Narrative Designer",
-          "games": "Planescape: Torment, Outer Wilds, Firewatch"
+          "games": "Picayune Dreams, Helldivers 2, Deep Rock Galactic"
         }
       ]
     },
@@ -225,28 +239,28 @@ const CONTENT = {
           "photo": "AndreyIvasenko",
           "initials": "AI",
           "role": "Art Director & Lead Concept Artist",
-          "games": "Bioshock, Dishonored, Destiny 2, Control"
+          "games": "Dark souls 3, Dishonored (1/2), Sekiro: Shadows Die Twice, Team Fortress 2, Jusant"
         },
         {
           "name": "Bohdan Poltoratskyi",
           "photo": "BohdanPoltoratskyi",
           "initials": "BP",
           "role": "Lead 3D Artist & Weapon Artist",
-          "games": "Fallout: New Vegas, Metro Exodus, Battlefield 1"
+          "games": "PUBG: Battlegrounds, Counter-Strike 2, Risk of Rain 2, Red Alert 3"
         },
         {
           "name": "Karina Afonina",
           "photo": "KarinaAfonina",
           "initials": "KA",
           "role": "3D Artist",
-          "games": "Journey, Gris, Stray, Hollow Knight"
+          "games": " Detroit: Become Human, Frostpunk, Valorant"
         },
         {
           "name": "Lipski Yaroslav",
           "photo": "LipskiYaroslav",
           "initials": "LY",
           "role": "Intern 3D Artist",
-          "games": "Minecraft"
+          "games": "Dishonored, Read Dead Redemption 2, Death Stranding,  Baldur's Gate 3, Subnautica"
         }
       ]
     },
@@ -269,68 +283,77 @@ const CONTENT = {
     "label": "Projects",
     "title": "What we're building."
   },
-  "nosains": {
-    "title": "NoSaints",
-    "subtitle": "New Dawn",
-    "description": "A dark and atmospheric first-person shooter built on narrative and mystery. Set in a world of crumbling cities, towering airships, and fractured alliances, NoSaints tells its story through a unique perspective that puts you at the center of events you barely understand — until you do.",
-    "tech": "Built in Unity using a feature-oriented MVP architecture with Zenject dependency injection, KINEMATION procedural animation, and ScriptableObject-driven state machines.",
-    "tags": [
-      "FPS",
-      "Narrative",
-      "Single Player",
-      "Atmospheric",
-      "Indie"
-    ],
-    "downloads": {
-      "windows": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/windows.zip",
-      "mac": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/mac.zip",
-      "linux": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/linux.zip"
+  "projects": [
+    {
+      "id": "nosaints-game",
+      "title": "NoSaints",
+      "subtitle": "New Dawn",
+      "description": "A dark and atmospheric first-person shooter built on narrative and mystery. Set in a world of crumbling cities, towering airships, and fractured alliances, NoSaints tells its story through a unique perspective that puts you at the center of events you barely understand — until you do.",
+      "tech": "Built in Unity using a feature-oriented MVP architecture with Zenject dependency injection, KINEMATION procedural animation, and ScriptableObject-driven state machines.",
+      "tags": [
+        "FPS",
+        "Narrative",
+        "Single Player",
+        "Atmospheric",
+        "Indie"
+      ],
+      "downloads": {
+        "windows": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/windows.zip",
+        "mac": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/mac.zip",
+        "linux": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/linux.zip"
+      },
+      "gallery": [
+        {
+          "src": "./assets/NoSaints/ConceptArt/Concept_5.png",
+          "alt": "Golden cityscape with airship"
+        },
+        {
+          "src": "./assets/NoSaints/ConceptArt/Concept_1.png",
+          "alt": "Industrial bridge district"
+        },
+        {
+          "src": "./assets/NoSaints/ConceptArt/Concept_2.png",
+          "alt": "Airships in amber haze"
+        },
+        {
+          "src": "./assets/NoSaints/ConceptArt/Concept_3.png",
+          "alt": "Destroyed cityscape"
+        },
+        {
+          "src": "./assets/NoSaints/ConceptArt/Concept_4.png",
+          "alt": "Ruins at night"
+        },
+        {
+          "src": "./assets/NoSaints/ConceptArt/Concept_7.png",
+          "alt": "Interior bar concept"
+        },
+        {
+          "src": "./assets/NoSaints/ConceptArt/Concept_6.png",
+          "alt": "Blue Whale bar design"
+        }
+      ]
     },
-    "gallery": [
-      {
-        "src": "./assets/NoSaints/ConceptArt/Concept_5.png",
-        "alt": "Golden cityscape with airship"
-      },
-      {
-        "src": "./assets/NoSaints/ConceptArt/Concept_1.png",
-        "alt": "Industrial bridge district"
-      },
-      {
-        "src": "./assets/NoSaints/ConceptArt/Concept_2.png",
-        "alt": "Airships in amber haze"
-      },
-      {
-        "src": "./assets/NoSaints/ConceptArt/Concept_3.png",
-        "alt": "Destroyed cityscape"
-      },
-      {
-        "src": "./assets/NoSaints/ConceptArt/Concept_4.png",
-        "alt": "Ruins at night"
-      },
-      {
-        "src": "./assets/NoSaints/ConceptArt/Concept_7.png",
-        "alt": "Interior bar concept"
-      },
-      {
-        "src": "./assets/NoSaints/ConceptArt/Concept_6.png",
-        "alt": "Blue Whale bar design"
-      }
-    ]
-  },
-  "boardgame": {
-    "title": "NoSaints",
-    "subtitle": "Board Game",
-    "description": "The NoSaints universe expands beyond the screen. NoSaints Board Game brings the world of fractured alliances, noir intrigue, and strategic combat to the tabletop — a standalone experience set in the same 1930s alternative USA.",
-    "tech": "Physical card and board game with faction-based mechanics, narrative scenarios, and asymmetric gameplay. Currently in early design and prototyping phase.",
-    "tags": [
-      "Board Game",
-      "Strategy",
-      "Narrative",
-      "1-4 Players",
-      "Tabletop"
-    ],
-    "status": "In Development"
-  }
+    {
+      "id": "nosaints-boardgame",
+      "title": "NoSaints",
+      "subtitle": "Board Game",
+      "description": "The NoSaints universe expands beyond the screen. NoSaints Board Game brings the world of fractured alliances, noir intrigue, and strategic combat to the tabletop — a standalone experience set in the same 1930s alternative USA.",
+      "tech": "Physical card and board game with faction-based mechanics, narrative scenarios, and asymmetric gameplay. Currently in early design and prototyping phase.",
+      "tags": [
+        "Board Game",
+        "Strategy",
+        "Narrative",
+        "1-4 Players",
+        "Tabletop"
+      ],
+      "gallery": [
+        {
+          "src": "./assets/BoardGame/Playtest_1.jpg",
+          "alt": "Playtest_1"
+        }
+      ]
+    }
+  ]
 },
   news: {
   "hero": {
@@ -380,7 +403,7 @@ const CONTENT = {
   "hero": {
     "label": "Careers",
     "title": "Build something<br>that matters.",
-    "description": "We're a team of 11 building an atmospheric FPS set in a noir 1930s alternative USA. If you care about craft and want to help shape a world from the ground up — we'd love to hear from you."
+    "description": "We're a team of 10 building an atmospheric FPS set in a noir 1930s alternative USA. If you care about gamedev and want to help shape a world with us — we'd love to hear from you."
   },
   "roles": [
     {
@@ -424,7 +447,7 @@ const CONTENT = {
       "type": "🟠 High Priority",
       "about": "Help us find and squash bugs across all game systems. You'll execute test cases, reproduce issues, and ensure stability across platforms.",
       "tasks": [
-        "Execute test cases across gameplay, UI, and network systems",
+        "Execute test cases across the game.",
         "Report and reproduce bugs with clear reproduction steps",
         "Test multiplayer stability and edge cases",
         "Perform compatibility and performance testing across platforms"
@@ -434,7 +457,7 @@ const CONTENT = {
       "title": "Music Composer",
       "dept": "🎵 Audio",
       "location": "🌍 Remote",
-      "type": "📋 Freelance / Contract",
+      "type": "🔴 Critical, Volonteer",
       "about": "Compose the soundtrack for a noir 1930s alternative USA — jazz-inflected, moody, and atmospheric. From the main theme to adaptive in-game loops that respond to combat and exploration.",
       "tasks": [
         "Compose main theme and menu music",
@@ -446,37 +469,63 @@ const CONTENT = {
         "DAW of choice (Ableton, FL Studio, Reaper)",
         "FMOD or Wwise for adaptive audio"
       ]
+    }
+  ]
+},
+  timeline: {
+  "hero": {
+    "label": "Timeline",
+    "title": "Our roadmap.",
+    "description": "Key milestones and goals on our path from prototype to release."
+  },
+  "milestones": [
+    {
+      "date": "2024",
+      "title": "NoSaints Diploma Project",
+      "description": "Multiplayer FPS prototype defended as diploma project at PJAIT. Voted best diploma project of the year by all 16 jurors.",
+      "status": "completed"
     },
     {
-      "title": "Producer",
-      "dept": "📊 Leadership",
-      "location": "🌍 Remote",
-      "type": "📋 Freelance / Contract",
-      "about": "Manage external relations, publishing pipelines, and milestone delivery. You'll handle contracts, coordinate outsourcing, and oversee QA and certification processes.",
-      "tasks": [
-        "Manage relationships with publishers or investors",
-        "Oversee milestone delivery to external stakeholders",
-        "Handle contracts and legal coordination",
-        "Manage outsourcing pipeline",
-        "Coordinate QA and certification processes"
-      ]
+      "date": "2025",
+      "title": "NoSaints Board Game",
+      "description": "Tabletop adaptation of the NoSaints universe. Faction-based strategy with narrative scenarios. Successfully playtested.",
+      "status": "completed"
     },
     {
-      "title": "Trailer / Video Editor",
-      "dept": "🎬 Marketing",
-      "location": "🌍 Remote",
-      "type": "📋 Freelance / Contract",
-      "about": "Edit gameplay trailers, devlog videos, and short-form clips for social media. You'll add motion graphics, title cards, and help us tell the NoSaints story to the world.",
-      "tasks": [
-        "Edit gameplay trailers and teasers",
-        "Produce devlog video content",
-        "Create short-form clips for social media (TikTok, Instagram, YouTube Shorts)",
-        "Add motion graphics and title cards"
-      ],
-      "tools": [
-        "DaVinci Resolve or Premiere Pro",
-        "After Effects for motion graphics"
-      ]
+      "date": "Early 2026",
+      "title": "Studio Formation",
+      "description": "Cenoir Studios officially founded. Team of 10 formalized. Pivot from multiplayer to single-player narrative FPS — NoSaints: Blue Whale.",
+      "status": "completed"
+    },
+    {
+      "date": "Q3 2026",
+      "title": "Vertical Slice",
+      "description": "Complete playable slice of NoSaints: Blue Whale — full gameplay loop with bartending, investigation, and combat sequences.",
+      "status": "in-progress"
+    },
+    {
+      "date": "Q4 2026",
+      "title": "Alpha Testing",
+      "description": "Closed alpha with core gameplay systems, first chapter narrative, and key environment art. Internal QA and select external playtesters.",
+      "status": "upcoming"
+    },
+    {
+      "date": "2027",
+      "title": "Digital Dragons",
+      "description": "Showcase NoSaints: Blue Whale at Digital Dragons conference in Kraków. Demo build, trailer, and press presence.",
+      "status": "planned"
+    },
+    {
+      "date": "2027",
+      "title": "Beta & Publisher Outreach",
+      "description": "Extended beta testing. Active outreach to publishers and investors. Marketing campaign and community building.",
+      "status": "planned"
+    },
+    {
+      "date": "2028",
+      "title": "Release",
+      "description": "Full release of NoSaints: Blue Whale on PC. Board game physical production and distribution.",
+      "status": "planned"
     }
   ]
 }

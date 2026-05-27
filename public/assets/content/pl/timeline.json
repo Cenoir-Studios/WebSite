@@ -1,0 +1,57 @@
+{
+  "hero": {
+    "label": "Harmonogram",
+    "title": "Nasz plan.",
+    "description": "Kluczowe kamienie milowe na drodze od prototypu do premiery."
+  },
+  "milestones": [
+    {
+      "date": "2024",
+      "title": "Projekt dyplomowy NoSaints",
+      "description": "Prototyp wieloosobowego FPS obroniony jako projekt dyplomowy na PJAIT. Najlepszy projekt roku.",
+      "status": "completed"
+    },
+    {
+      "date": "2025",
+      "title": "Gra planszowa NoSaints",
+      "description": "Planszowa adaptacja uniwersum NoSaints. Strategia frakcyjna ze scenariuszami narracyjnymi.",
+      "status": "completed"
+    },
+    {
+      "date": "Początek 2026",
+      "title": "Założenie studia",
+      "description": "Cenoir Studios oficjalnie założone. Zespół 10 osób. Przejście na jednoosobowy FPS — NoSaints: Blue Whale.",
+      "status": "completed"
+    },
+    {
+      "date": "Q3 2026",
+      "title": "Vertical Slice",
+      "description": "Kompletny grywalny fragment NoSaints: Blue Whale — pełna pętla gameplayowa.",
+      "status": "in-progress"
+    },
+    {
+      "date": "Q4 2026",
+      "title": "Testy alfa",
+      "description": "Zamknięta alfa z głównymi systemami gry i pierwszym rozdziałem narracji.",
+      "status": "upcoming"
+    },
+    {
+      "date": "2027",
+      "title": "Digital Dragons",
+      "description": "Prezentacja NoSaints: Blue Whale na konferencji Digital Dragons w Krakowie.",
+      "status": "planned"
+    },
+    {
+      "date": "2027",
+      "title": "Beta i wydawcy",
+      "description": "Rozszerzone testy beta. Poszukiwanie wydawców i inwestorów.",
+      "status": "planned"
+    },
+    {
+      "date": "2028",
+      "title": "Premiera",
+      "description": "Pełna premiera NoSaints: Blue Whale na PC.",
+      "status": "planned"
+    }
+  ]
+}
