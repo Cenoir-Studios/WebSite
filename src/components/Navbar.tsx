@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import SmartImg from './SmartImg';
 import { useLang, LANG_FLAGS, type Lang } from '../content/LangContext';
-import { getContent } from '../content/loader';
+import { useContent } from '../content/ContentContext';
 
 interface Props {
   route: string;
@@ -13,7 +13,7 @@ export default function Navbar({ route }: Props) {
   const [langOpen, setLangOpen] = useState(false);
   const { lang, setLang } = useLang();
 
-  const nav = getContent('shared').nav || { home: 'Home', about: 'About', team: 'Team', projects: 'Projects', news: 'News', careers: 'Careers', timeline: 'Timeline' };
+  const nav = useContent('shared').nav || { home: 'Home', about: 'About', team: 'Team', projects: 'Projects', news: 'News', careers: 'Careers', timeline: 'Timeline' };
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 40);

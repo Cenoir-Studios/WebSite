@@ -1,8 +1,8 @@
-import { getContent } from '../content/loader';
+import { useContent } from '../content/ContentContext';
 import Reveal from '../components/Reveal';
 
 export default function AboutPage() {
-  const d = getContent('about');
+  const d = useContent('about');
 
   return (
     <main className="page">

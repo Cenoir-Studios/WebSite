@@ -1,9 +1,9 @@
-import { getContent } from '../content/loader';
+import { useContent } from '../content/ContentContext';
 import SmartImg from './SmartImg';
 import Socials from './Socials';
 
 export default function Footer() {
-  const s = getContent('shared');
+  const s = useContent('shared');
   const e = s.emails || ({} as Record<string, string>);
   const mailto = (key: keyof typeof e) => <a href={`mailto:${e[key]}`}>{e[key]}</a>;
 

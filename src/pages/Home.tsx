@@ -1,9 +1,9 @@
-import { getContent } from '../content/loader';
+import { useContent } from '../content/ContentContext';
 import Reveal from '../components/Reveal';
 import SmartImg from '../components/SmartImg';
 
 export default function HomePage() {
-  const d = getContent('index');
+  const d = useContent('index');
   const h = d.hero;
   const f = d.featured;
 

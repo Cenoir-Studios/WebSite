@@ -1,9 +1,9 @@
-import { getContent } from '../content/loader';
+import { useContent } from '../content/ContentContext';
 import Reveal from '../components/Reveal';
 import TeamAvatar from '../components/TeamAvatar';
 
 export default function TeamPage() {
-  const d = getContent('team');
+  const d = useContent('team');
 
   return (
     <main className="page">

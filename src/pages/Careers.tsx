@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { getContent } from '../content/loader';
+import { useContent } from '../content/ContentContext';
 import Reveal from '../components/Reveal';
 import type { Role } from '../content/types';
 
 function RoleCard({ role }: { role: Role }) {
   const [open, setOpen] = useState(false);
-  const email = getContent('shared').emails?.careers || '';
+  const email = useContent('shared').emails?.careers || '';
 
   return (
     <div className={`role-card${open ? ' expanded' : ''}`}>
@@ -44,8 +44,8 @@ function RoleCard({ role }: { role: Role }) {
 }
 
 export default function CareersPage() {
-  const d = getContent('careers');
-  const email = getContent('shared').emails?.careers || '';
+  const d = useContent('careers');
+  const email = useContent('shared').emails?.careers || '';
 
   return (
     <main className="page">

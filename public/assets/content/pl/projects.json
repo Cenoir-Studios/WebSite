@@ -8,8 +8,8 @@
       "id": "nosaints-game",
       "title": "NoSaints",
       "subtitle": "New Dawn",
-      "description": "A dark and atmospheric first-person shooter built on narrative and mystery. Set in a world of crumbling cities, towering airships, and fractured alliances, NoSaints tells its story through a unique perspective that puts you at the center of events you barely understand — until you do.",
-      "tech": "Built in Unity using a feature-oriented MVP architecture with Zenject dependency injection, KINEMATION procedural animation, and ScriptableObject-driven state machines.",
+      "description": "Mroczny i klimatyczny FPS zbudowany na narracji i tajemnicy. W świecie walących się miast, olbrzymich sterowców i złamanych sojuszy, NoSaints opowiada swoją historię przez unikalną perspektywę, która stawia cię w centrum wydarzeń, których ledwo rozumiesz — dopóki nie zrozumiesz.",
+      "tech": "Stworzony w Unity z architekturą MVP, Zenject do wstrzykiwania zależności, animacją proceduralną KINEMATION i maszynami stanów opartymi na ScriptableObject.",
       "tags": [
         "FPS",
         "Narrative",
@@ -57,8 +57,8 @@
       "id": "nosaints-boardgame",
       "title": "NoSaints",
       "subtitle": "Board Game",
-      "description": "The NoSaints universe expands beyond the screen. NoSaints Board Game brings the world of fractured alliances, noir intrigue, and strategic combat to the tabletop — a standalone experience set in the same 1930s alternative USA.",
-      "tech": "Physical card and board game with faction-based mechanics, narrative scenarios, and asymmetric gameplay. Currently in early design and prototyping phase.",
+      "description": "Uniwersum NoSaints wykracza poza ekran. Gra planszowa NoSaints przenosi świat złamanych sojuszy, noir intryg i strategicznej walki na stół — samodzielne doświadczenie w tej samej alternatywnej Ameryce lat 30.",
+      "tech": "Fizyczna gra karciana i planszowa z mechanikami frakcyjnymi, scenariuszami narracyjnymi i asymetrycznym gameplayem. Obecnie w fazie wczesnego projektowania i prototypowania.",
       "tags": [
         "Board Game",
         "Strategy",

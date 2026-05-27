@@ -1,4 +1,4 @@
-import { getContent } from '../content/loader';
+import { useContent } from '../content/ContentContext';
 import Reveal from '../components/Reveal';
 
 const STATUS_STYLES: Record<string, { color: string; label: string }> = {
@@ -9,7 +9,7 @@ const STATUS_STYLES: Record<string, { color: string; label: string }> = {
 };
 
 export default function TimelinePage() {
-  const d = getContent('timeline');
+  const d = useContent('timeline');
   const milestones = d.milestones || [];
 
   return (

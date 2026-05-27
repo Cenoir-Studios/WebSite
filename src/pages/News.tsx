@@ -1,8 +1,8 @@
-import { getContent } from '../content/loader';
+import { useContent } from '../content/ContentContext';
 import Reveal from '../components/Reveal';
 
 export default function NewsPage() {
-  const d = getContent('news');
+  const d = useContent('news');
 
   return (
     <main className="page">

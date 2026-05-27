@@ -1,6 +1,6 @@
 import Reveal from '../components/Reveal';
 import ProjectCard from '../components/ProjectCard';
-import { getContent } from '../content/loader';
+import { useContent } from '../content/ContentContext';
 
 type Project = {
   id?: string;
@@ -30,7 +30,7 @@ type ProjectsContent = {
 };
 
 export default function ProjectsPage() {
-  const d = getContent('projects') as ProjectsContent;
+  const d = useContent('projects') as ProjectsContent;
 
   return (
     <main className="page">

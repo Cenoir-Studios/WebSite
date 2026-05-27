@@ -8,8 +8,8 @@
       "id": "nosaints-game",
       "title": "NoSaints",
       "subtitle": "New Dawn",
-      "description": "A dark and atmospheric first-person shooter built on narrative and mystery. Set in a world of crumbling cities, towering airships, and fractured alliances, NoSaints tells its story through a unique perspective that puts you at the center of events you barely understand — until you do.",
-      "tech": "Built in Unity using a feature-oriented MVP architecture with Zenject dependency injection, KINEMATION procedural animation, and ScriptableObject-driven state machines.",
+      "description": "Темний та атмосферний шутер від першої особи, побудований на наративі та таємницях. У світі міст, що руйнуються, гігантських дирижаблів та зламаних союзів, NoSaints розповідає свою історію через унікальну перспективу, яка ставить вас у центр подій, які ви ледь розумієте — поки не зрозумієте.",
+      "tech": "Створено в Unity з використанням MVP-архітектури, Zenject для впровадження залежностей, KINEMATION процедурної анімації та ScriptableObject-систем станів.",
       "tags": [
         "FPS",
         "Narrative",
@@ -57,8 +57,8 @@
       "id": "nosaints-boardgame",
       "title": "NoSaints",
       "subtitle": "Board Game",
-      "description": "The NoSaints universe expands beyond the screen. NoSaints Board Game brings the world of fractured alliances, noir intrigue, and strategic combat to the tabletop — a standalone experience set in the same 1930s alternative USA.",
-      "tech": "Physical card and board game with faction-based mechanics, narrative scenarios, and asymmetric gameplay. Currently in early design and prototyping phase.",
+      "description": "Всесвіт NoSaints виходить за межі екрану. Настільна гра NoSaints переносить світ зламаних союзів, нуарних інтриг та стратегічного бою на стіл — окремий досвід у тій самій альтернативній Америці 1930-х.",
+      "tech": "Фізична карткова та настільна гра з фракційними механіками, наративними сценаріями та асиметричним геймплеєм. Наразі на етапі раннього дизайну та прототипування.",
       "tags": [
         "Board Game",
         "Strategy",
