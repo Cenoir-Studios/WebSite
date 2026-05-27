@@ -26,6 +26,11 @@
       "label": "TikTok",
       "url": "https://www.tiktok.com/@cenoir.studios",
       "icon": "tiktok"
+    },
+    {
+      "label": "Discord",
+      "url": "https://discord.gg/NXxfYq2rmw",
+      "icon": "discord"
     }
   ],
   "emails": {
@@ -64,6 +69,9 @@
     "tools": "Інструменти",
     "concept_gallery": "Галерея концепт-арту",
     "fav_games": "Улюблені ігри",
-    "in_development": "В розробці"
+    "in_development": "В розробці",
+    "footer_studio": "Студія",
+    "footer_contact": "Контакти",
+    "footer_other": "Інше"
   }
 }

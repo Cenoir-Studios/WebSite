@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Reveal from './Reveal';
 import SmartImg from './SmartImg';
+import { useContent } from '../content/ContentContext';
 
 type Project = {
   id?: string;
@@ -22,6 +23,7 @@ type Project = {
 };
 
 export default function ProjectCard({ project }: { project: Project }) {
+  const ui = useContent('shared').ui;
   const gallery = project.gallery || [];
   const hasGallery = gallery.length > 0;
 
@@ -170,7 +172,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             </>
           ) : (
             <div className="project-placeholder">
-              <span>In Development</span>
+              <span>{ui?.in_development || "In Development"}</span>
             </div>
           )}
         </div>
@@ -178,7 +180,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 
       {hasGallery && (
         <div className="gallery-section">
-          <p className="gallery-label">Gallery</p>
+          <p className="gallery-label">{ui?.concept_gallery || "Gallery"}</p>
 
           <div className="gallery-grid">
             {gallery.map((img, i) => (
@@ -217,9 +219,9 @@ export default function ProjectCard({ project }: { project: Project }) {
               ✕
             </button>
 
-            <h3>Download {project.title}</h3>
+            <h3>{(ui?.download_title || "Download") + " " + project.title}</h3>
 
-            <p>Choose your platform.</p>
+            <p>{ui?.choose_platform || "Choose your platform."}</p>
 
             <div className="platform-options">
               {platforms.map(p => (

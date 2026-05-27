@@ -33,6 +33,9 @@ export interface UIStrings {
   concept_gallery: string;
   fav_games: string;
   in_development: string;
+  footer_studio: string;
+  footer_contact: string;
+  footer_other: string;
 }
 
 export interface SharedContent {

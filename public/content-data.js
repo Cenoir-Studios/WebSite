@@ -28,6 +28,11 @@ const CONTENT = {
       "label": "TikTok",
       "url": "https://www.tiktok.com/@cenoir.studios",
       "icon": "tiktok"
+    },
+    {
+      "label": "Discord",
+      "url": "https://discord.gg/NXxfYq2rmw",
+      "icon": "discord"
     }
   ],
   "emails": {
@@ -66,7 +71,10 @@ const CONTENT = {
     "tools": "Tools",
     "concept_gallery": "Concept Art Gallery",
     "fav_games": "Favorite games",
-    "in_development": "In Development"
+    "in_development": "In Development",
+    "footer_studio": "Studio",
+    "footer_contact": "Contact",
+    "footer_other": "Other"
   }
 },
   index: {
