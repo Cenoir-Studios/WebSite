@@ -11,9 +11,6 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-inner">
-        <div className="footer-top">
-          <Socials items={s.socials} />
-        </div>
         <div className="footer-columns">
           <div className="footer-col">
             <h4>{ui?.footer_studio || 'Studio'}</h4>
@@ -32,6 +29,10 @@ export default function Footer() {
           <div className="footer-col">
             <h4>{ui?.footer_other || 'Other'}</h4>
             {mailto('social')}{mailto('legal')}
+          </div>
+          <div className="footer-col footer-col--social">
+            <h4>Social</h4>
+            <Socials items={s.socials} />
           </div>
         </div>
         <p className="footer-copy">{s.copyright}</p>
