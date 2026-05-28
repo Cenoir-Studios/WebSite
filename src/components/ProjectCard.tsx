@@ -226,7 +226,7 @@ export default function ProjectCard({ project }: { project: Project }) {
               ✕
             </button>
 
-            <h3>{(ui?.download_title || "Download") + " " + project.title}</h3>
+            <h3>{(ui?.download_title || "Download") + " " + project.title + (project.subtitle ? ": " + project.subtitle : "")}</h3>
 
             <p>{ui?.choose_platform || "Choose your platform."}</p>
 

@@ -35,6 +35,8 @@ export default function Footer() {
             <Socials items={s.socials} />
           </div>
         </div>
+      </div>
+      <div className="footer-bottom">
         <p className="footer-copy">{s.copyright}</p>
       </div>
     </footer>
