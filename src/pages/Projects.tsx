@@ -11,6 +11,7 @@ type Project = {
   tags?: string[];
   status?: string;
   downloads?: {
+    windows64?: string;
     windows?: string;
     mac?: string;
     linux?: string;

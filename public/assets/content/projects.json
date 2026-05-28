@@ -7,51 +7,52 @@
     {
       "id": "nosaints-game",
       "title": "NoSaints",
-        "subtitle": "New Dawn",
-        "description": "A dark and atmospheric first-person shooter built on narrative and mystery. Set in a world of crumbling cities, towering airships, and fractured alliances, NoSaints tells its story through a unique perspective that puts you at the center of events you barely understand — until you do.",
-        "tech": "Built in Unity using a feature-oriented MVP architecture with Zenject dependency injection, KINEMATION procedural animation, and ScriptableObject-driven state machines.",
-        "tags": [
-          "FPS",
-          "Narrative",
-          "Single Player",
-          "Atmospheric",
-          "Indie"
-        ],
-        "downloads": {
-          "windows": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/windows.zip",
-          "mac": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/mac.zip",
-          "linux": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/linux.zip"
+      "subtitle": "New Dawn",
+      "description": "A dark and atmospheric first-person shooter built on narrative and mystery. Set in a world of crumbling cities, towering airships, and fractured alliances, NoSaints tells its story through a unique perspective that puts you at the center of events you barely understand — until you do.",
+      "tech": "Built in Unity using a feature-oriented MVP architecture with Zenject dependency injection, KINEMATION procedural animation, and ScriptableObject-driven state machines.",
+      "tags": [
+        "FPS",
+        "Narrative",
+        "Single Player",
+        "Atmospheric",
+        "Indie"
+      ],
+      "downloads": {
+        "windows64": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/StandaloneWindows64.zip",
+        "windows": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/StandaloneWindows.zip",
+        "linux": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/StandaloneLinux64.zip",
+        "mac": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/StandaloneOSX.zip"
+      },
+      "gallery": [
+        {
+          "src": "./assets/NoSaints/ConceptArt/Concept_5.png",
+          "alt": "Golden cityscape with airship"
         },
-        "gallery": [
-          {
-            "src": "./assets/NoSaints/ConceptArt/Concept_5.png",
-            "alt": "Golden cityscape with airship"
-          },
-          {
-            "src": "./assets/NoSaints/ConceptArt/Concept_1.png",
-            "alt": "Industrial bridge district"
-          },
-          {
-            "src": "./assets/NoSaints/ConceptArt/Concept_2.png",
-            "alt": "Airships in amber haze"
-          },
-          {
-            "src": "./assets/NoSaints/ConceptArt/Concept_3.png",
-            "alt": "Destroyed cityscape"
-          },
-          {
-            "src": "./assets/NoSaints/ConceptArt/Concept_4.png",
-            "alt": "Ruins at night"
-          },
-          {
-            "src": "./assets/NoSaints/ConceptArt/Concept_7.png",
-            "alt": "Interior bar concept"
-          },
-          {
-            "src": "./assets/NoSaints/ConceptArt/Concept_6.png",
-            "alt": "Blue Whale bar design"
-          }
-        ]
+        {
+          "src": "./assets/NoSaints/ConceptArt/Concept_1.png",
+          "alt": "Industrial bridge district"
+        },
+        {
+          "src": "./assets/NoSaints/ConceptArt/Concept_2.png",
+          "alt": "Airships in amber haze"
+        },
+        {
+          "src": "./assets/NoSaints/ConceptArt/Concept_3.png",
+          "alt": "Destroyed cityscape"
+        },
+        {
+          "src": "./assets/NoSaints/ConceptArt/Concept_4.png",
+          "alt": "Ruins at night"
+        },
+        {
+          "src": "./assets/NoSaints/ConceptArt/Concept_7.png",
+          "alt": "Interior bar concept"
+        },
+        {
+          "src": "./assets/NoSaints/ConceptArt/Concept_6.png",
+          "alt": "Blue Whale bar design"
+        }
+      ]
     },
     {
       "id": "nosaints-boardgame",
@@ -74,4 +75,4 @@
       ]
     }
   ]
-} 
+}

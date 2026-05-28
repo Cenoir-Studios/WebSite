@@ -12,6 +12,7 @@ type Project = {
   tags?: string[];
   status?: string;
   downloads?: {
+    windows64?: string;
     windows?: string;
     mac?: string;
     linux?: string;
@@ -48,6 +49,12 @@ export default function ProjectCard({ project }: { project: Project }) {
       icon: '🪟',
       name: 'Windows',
       arch: 'x64 · .zip',
+      url: project.downloads?.windows64,
+    },
+    {
+      icon: '🪟',
+      name: 'Windows',
+      arch: 'x86 · .zip',
       url: project.downloads?.windows,
     },
     {

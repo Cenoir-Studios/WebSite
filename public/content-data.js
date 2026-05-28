@@ -328,9 +328,10 @@ const CONTENT = {
         "Indie"
       ],
       "downloads": {
-        "windows": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/windows.zip",
-        "mac": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/mac.zip",
-        "linux": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/linux.zip"
+        "windows64": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/StandaloneWindows64.zip",
+        "windows": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/StandaloneWindows.zip",
+        "linux": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/StandaloneLinux64.zip",
+        "mac": "https://github.com/Cenoir-Studios/NoSaintsBuilds/archive/refs/heads/StandaloneOSX.zip"
       },
       "gallery": [
         {
