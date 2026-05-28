@@ -14,8 +14,9 @@ export default function Socials({ items }: { items?: Social[] }) {
     <div className="footer-social">
       {(items || []).map(s => (
         <a key={s.label} href={s.url} target="_blank" rel="noopener noreferrer"
-           className="social-link" aria-label={s.label}
-           dangerouslySetInnerHTML={{ __html: SVG[s.icon] || '' }} />
+           className="social-link" aria-label={s.label}>
+          <span className="social-icon" dangerouslySetInnerHTML={{ __html: SVG[s.icon] || '' }} />
+        </a>
       ))}
     </div>
   );

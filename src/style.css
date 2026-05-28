@@ -410,24 +410,11 @@ body::before {
 .footer-bottom { margin-top: 2rem; padding-top: 1.25rem; text-align: center; position: relative; }
 .footer-bottom::before { content: ''; position: absolute; top: 0; left: calc(-1 * var(--pad)); right: calc(-1 * var(--pad)); height: 1px; background: var(--border); }
 .footer-copy { font-size: 0.72rem; color: var(--text-muted); margin: 0; }
-.footer-social { display: flex; gap: 0.4rem; margin-top: 0.5rem; width: 100%; }
-.social-row { display: flex; gap: 0.6rem; flex-wrap: wrap; }
-.social-link {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 40px; height: 40px; border-radius: 10px;
-  background: var(--surface); border: 1px solid var(--border);
-  color: var(--text-muted); font-size: 0.82rem; font-weight: 600;
-  transition: all 0.3s var(--ease-out-expo); text-decoration: none;
-}
-.social-link:hover {
-  border-color: var(--accent); color: var(--accent); background: var(--accent-glow);
-  transform: translateY(-2px);
-}
-.social-link svg { width: 18px; height: 18px; fill: currentColor; }
-
-.footer-social { display: flex; gap: 0.5rem; margin-top: 0.75rem; }
-.footer-social .social-link { width: 34px; height: 34px; border-radius: 8px; }
-.footer-social .social-link svg { width: 15px; height: 15px; }
+.footer-social { display: flex; gap: 0.4rem; }
+.social-link { display: flex; width: 34px; height: 34px; border-radius: 8px; background: var(--surface); border: 1px solid var(--border); color: var(--text-muted); transition: all 0.3s; padding: 0; text-decoration: none; }
+.social-link:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); transform: translateY(-2px); }
+.social-icon { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+.social-icon svg { width: 14px; height: 14px; fill: currentColor; }
 
 /* ═══════ ANIMATIONS ═══════ */
 
