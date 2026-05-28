@@ -109,7 +109,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                 className="btn btn--primary"
                 onClick={() => setModal(true)}
               >
-                ▶ Download Build
+                {ui?.download_build || "▶ Download Build"}
               </button>
             )}
 

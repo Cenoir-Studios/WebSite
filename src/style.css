@@ -407,10 +407,11 @@ body::before {
 .footer-col h4 { font-size: 0.68rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.6rem; }
 .footer-col a { display: block; font-size: 0.82rem; color: var(--text-secondary); padding: 0.15rem 0; transition: color 0.3s; }
 .footer-col a:hover { color: var(--accent); }
-.footer-bottom { border-top: 1px solid var(--border); margin-top: 2rem; padding-top: 1.25rem; text-align: center; }
+.footer-bottom { margin-top: 2rem; padding-top: 1.25rem; text-align: center; position: relative; }
+.footer-bottom::before { content: ''; position: absolute; top: 0; left: calc(-1 * var(--pad)); right: calc(-1 * var(--pad)); height: 1px; background: var(--border); }
 .footer-copy { font-size: 0.72rem; color: var(--text-muted); margin: 0; }
 .footer-social { display: flex; gap: 0.4rem; }
-.social-link { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 8px; background: var(--surface); border: 1px solid var(--border); color: var(--text-muted); transition: all 0.3s; }
+.social-link { display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 8px; background: var(--surface); border: 1px solid var(--border); color: var(--text-muted); transition: all 0.3s; }
 .social-link:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); transform: translateY(-2px); }
 .social-link svg { width: 14px; height: 14px; fill: currentColor; display: block; }
 
