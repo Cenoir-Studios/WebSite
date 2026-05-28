@@ -243,7 +243,7 @@ const CONTENT = {
           "photo": "IliyaRatkevich",
           "initials": "IR",
           "role": "Lead Game Designer",
-          "games": "Warframe, Team Fortress 2, Library of Ruina, Ghostrunner, Ultrakill"
+          "games": "Warframe, Team Fortress 2, Library of Ruina, Ghostrunner, Ultrakill, The Talos Principle"
         },
         {
           "name": "Mykhailo Papunitskyi",
